@@ -5,5 +5,5 @@ const botao4 = document.querySelector("#foto4")
 const botao5 = document.querySelector("#foto5")
 
 botao1.addEventListener("click", (event) => {
-
+    
 });
