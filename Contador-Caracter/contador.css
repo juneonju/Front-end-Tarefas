@@ -29,10 +29,12 @@
 
     padding: 15px;
 
-    text-align: center;
+    text-align: left;
 }
 .texto{
     border: none;
+
+    border-radius: 15px;
     
 }
 textarea{

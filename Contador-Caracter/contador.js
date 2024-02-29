@@ -9,7 +9,7 @@ txtArea.addEventListener("input", (event) => {
     let limite = 100 - qtdcaracter
     caracter.innerHTML = limite
 
-        if (caracter.innerHTML == false){
+        if (caracter.innerHTML == 0){
 
             texto.innerHTML = "você atingiu o maximo de caracteres"
 
