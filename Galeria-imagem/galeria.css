@@ -9,16 +9,87 @@
 
     color: black;
 
+    background-image: linear-gradient(purple, red);
+
+    height: 100vh;
+
 }
 .fotos{
 
     text-align: left;
 
-    border: solid;
-
     width: 200px;
 
     height: 765px;
 
-    margin-left: 7%;
+    margin-left: 15%;
+
+    cursor: pointer;
+
+    padding: 10px;
+
+    position: absolute;
+
+    bottom: 50px;
+
+}
+#foto1{
+
+    border: solid;
+
+    border-radius: 15px;
+
+}
+#foto1:hover{
+
+    opacity: 0.5;
+    
+}
+#foto2{
+
+    border: solid;
+
+    border-radius: 15px;
+
+}
+#foto2:hover{
+
+    opacity: 0.5;
+    
+}
+#foto3{
+
+    border: solid;
+
+    border-radius: 15px;
+
+}
+#foto3:hover{
+
+    opacity: 0.5;
+    
+}
+#foto4{
+
+    border: solid;
+
+    border-radius: 15px;
+
+}
+#foto4:hover{
+
+    opacity: 0.5;
+    
+}
+#foto5{
+
+    border: solid;
+
+    border-radius: 15px;
+
+}
+#foto5:hover{
+
+    opacity: 0.5;
+    
 }
