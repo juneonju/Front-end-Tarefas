@@ -1,37 +1,43 @@
-const botao1 = document.querySelector("#foto1")
-const botao2 = document.querySelector("#foto2")
-const botao3 = document.querySelector("#foto3")
-const botao4 = document.querySelector("#foto4")
-const botao5 = document.querySelector("#foto5")
+const fotos = document.querySelectorAll(".fotos img")
 const imagemnova = document.querySelector("#imagemfull")
+const botao1 = document.querySelector("#botao1")
+const botao2 = document.querySelector("#botao2")
 
-botao1.addEventListener("click", (event) => {
+var contador = 0
 
-    imagemnova.src = botao1.src
-    imagemnova.style.display = "block"
+imagemnova.src = fotos[0].src;
+
+
+for (let index = 0; index < fotos.length; index++) {
+
+    fotos[index].addEventListener("click", (event) => {
+
+        imagemnova.src = fotos[index].src
+        
+    });
     
-});
+}
 
-botao2.addEventListener("click", (event) => {
+    botao1.addEventListener("click", (event) =>{
 
-    imagemnova.src = botao2.src
+        if (contador > 0){
+
+            contador--;
+            imagemnova.src = fotos[contador].src;
     
-});
+        }
 
-botao3.addEventListener("click", (event) => {
+    });
 
-    imagemnova.src = botao3.src
+
+
+    botao2.addEventListener("click", (event) =>{
+        
+        if (contador < fotos.length -1){
+
+            contador++;
+            imagemnova.src = fotos[contador].src;
     
-});
-
-botao4.addEventListener("click", (event) => {
-
-    imagemnova.src = botao4.src
-    
-});
-
-botao5.addEventListener("click", (event) => {
-
-    imagemnova.src = botao5.src
-    
-});
+        }
+        
+    });
