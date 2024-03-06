@@ -27,3 +27,20 @@ navegacao.id = "navegacao"
 exibicao.appendChild(navegacao)
 navegacao.appendChild(botao1)
 navegacao.appendChild(botao2)
+
+let contador = listaImagens.length
+
+botao1.addEventListener("click", (event) => {
+    if (contador != 0){
+        contador--
+        copiaImagem.src = listaImagens[contador]
+    }
+});
+
+botao2.addEventListener("click", (event) => {
+    if (contador != 4){
+        contador++
+        copiaImagem.src = listaImagens[contador]
+    }
+});
+

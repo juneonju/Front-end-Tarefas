@@ -19,18 +19,17 @@ body{
     overflow: auto;
 }
 .exibicao{
-    height: 710px;
-    width: 600px;
+    height: 810px;
+    width: 800px;
     margin-left: 300px;
     margin-top: 20px;
-    border: solid;
     display: flex;
     flex-direction: column;
 }
 .exibicao img{
     margin-top: 30px;
-    height: 600px;
-    width: 600px;
+    height: 800px;
+    width: 8    00px;
 }
 .exibicao h1{
     text-align: center;
@@ -38,4 +37,6 @@ body{
 #navegacao{
     display: flex;
     justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
