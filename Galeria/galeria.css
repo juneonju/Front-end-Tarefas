@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(173, 173, 173);
+    display: flex;
+    height: 900px;
+    width: 1500px;
+}
+.galeria img{
+    height: 300px;
+    width: 300px;
+}
+.galeria img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.galeria{
+    height: 900px;
+    width: 320px;
+    flex-direction: column;
+    overflow: auto;
+}
+.exibicao{
+    height: 710px;
+    width: 600px;
+    margin-left: 300px;
+    margin-top: 20px;
+    border: solid;
+    display: flex;
+    flex-direction: column;
+}
+.exibicao img{
+    margin-top: 30px;
+    height: 600px;
+    width: 600px;
+}
+.exibicao h1{
+    text-align: center;
+}
+#navegacao{
+    display: flex;
+    justify-content: center;
+}
