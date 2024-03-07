@@ -1,0 +1,28 @@
+#senha{
+    border: solid;
+    height: 100px;
+    width: 600px;
+    margin-left: 650px;
+}
+#chamarSenha{
+    border: solid;
+    height: 500px;
+    width: 365px;
+    margin-top: 100px;
+    margin-left: 760px;
+}
+#botoes{
+    display: flex;
+    justify-content: center;
+    gap: 400px;
+}
+h1{
+    text-align: center;
+}
+button{
+    padding: 10px;
+    cursor: pointer;
+}
+p{
+    text-align: center;
+}
