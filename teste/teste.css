@@ -26,3 +26,15 @@ button{
 p{
     text-align: center;
 }
+#texto1{
+    height: 94px;
+    width: 595px;
+    resize: none;
+    text-align: center;
+}
+#texto2{
+    height: 444px;
+    width: 360px;
+    resize: none;
+    text-align: center;
+}
