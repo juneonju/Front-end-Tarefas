@@ -1,8 +1,8 @@
 body{
-    background-color: rgb(96, 96, 99);
+    background-color: rgb(50, 50, 50);
 }
 #senha{
-    background-color: rgb(18, 119, 187);
+    background-color: rgb(20, 20, 20);
     
     border: solid;
 
@@ -14,8 +14,24 @@ body{
 
     left: 40%;
 }
-#chamarSenha{
-    background-color: rgb(10, 28, 131);
+#Titulo2{
+    position: relative;
+    
+    height: 50px;
+
+    width: 400px;
+
+    left: 40%;
+
+    margin-top: 50px;
+
+    border: solid;
+
+    background-color: rgb(20, 20, 20);
+
+}
+#ultimasSenhas{
+    background-color: rgb(31,31,31);
 
     position: relative;
 
@@ -27,7 +43,7 @@ body{
 
     left: 40%;
 
-    margin-top: 50px;
+    margin-top: 0px;
 }
 #botoes{
     position: relative;
@@ -48,26 +64,13 @@ body{
 }
 h1{
     color: white;
+
     text-align: center;
 }
 button{
     padding: 5px;
 
     cursor: pointer;
-}
-h3{
-    color: white;
-
-    text-align: center;
-
-    margin-top: 0%;
-
-    height: 30px;
-
-    background-color: rgb(18, 119, 187);
-
-
-
 }
 #texto1{
     color: white;
@@ -88,15 +91,16 @@ h3{
 
     margin-top: 22px;
 
-    background-color: rgb(18, 119, 187);
+    background-color: rgb(20, 20, 20);
 
     border: none;
 }
 #texto2{
     margin-top: 0%;
+
     color: white;
 
-    height: 450px;
+    height: 500px;
 
     width: 224px;
 
@@ -108,5 +112,49 @@ h3{
 
     overflow: auto;
 
+}
+#titulosite2{
 
+    height: 50px;
+
+    position: relative;
+
+    font-size: xx-large;
+
+    color: rgb(255, 255, 255);
+
+    text-align: center;
+
+    margin-top: 0%;
+
+    background-color: rgb(20, 20, 20);
+
+    margin-top: 10px;
+
+}
+#botao1{
+    width: 100px;
+
+    height: 50px;
+
+    margin: 3px;
+
+    cursor: pointer;
+
+    background-color: rgb(31,31,31);
+
+    color: white;
+}
+#botao2{
+    width: 100px;
+
+    height: 50px;
+
+    margin: 3px;
+
+    cursor: pointer;
+
+    background-color: rgb(31,31,31);
+
+    color: white;
 }
