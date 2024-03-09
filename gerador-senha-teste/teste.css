@@ -1,0 +1,147 @@
+body{
+    background-color: rgb(50, 50, 50);
+}
+#senha{
+    background-color: rgb(20, 20, 20);
+    
+    border: solid;
+
+    height: 100px;
+
+    width: 400px;
+
+    position: relative;
+
+    left: 40%;
+}
+#Titulo2{
+    position: relative;
+    
+    height: 50px;
+
+    width: 400px;
+
+    left: 40%;
+
+    margin-top: 50px;
+
+    border: solid;
+
+    background-color: rgb(20, 20, 20);
+
+}
+#ultimasSenhas{
+    background-color: rgb(31,31,31);
+
+    position: relative;
+
+    border: solid;
+
+    height: 500px;
+
+    width: 400px;
+
+    left: 40%;
+
+    margin-top: 0px;
+}
+#botoes{
+    position: relative;
+
+    left: 40%;
+
+    display: flex;
+
+    align-items: center;
+    
+    justify-content: center;
+
+    height: 100px;
+
+    width: 400px;
+
+    gap: 100px;
+}
+h1{
+    color: white;
+
+    text-align: center;
+}
+button{
+    padding: 5px;
+
+    cursor: pointer;
+}
+#texto1{
+    color: white;
+
+    position: relative;
+
+    height: 72px;
+
+    width: 394px;
+
+    resize: none;
+
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    
+    font-size:xx-large;
+
+    margin-top: 22px;
+
+    background-color: rgb(20, 20, 20);
+
+    border: none;
+}
+#texto2{
+    margin-top: 0%;
+
+    color: white;
+
+    height: 500px;
+
+    width: 224px;
+
+    list-style: none;
+
+    font-size: xx-large;
+
+    margin-left: 34%;
+
+    overflow: auto;
+
+}
+#titulosite2{
+
+    height: 50px;
+
+    position: relative;
+
+    font-size: xx-large;
+
+    color: rgb(255, 255, 255);
+
+    text-align: center;
+
+    margin-top: 0%;
+
+    background-color: rgb(20, 20, 20);
+
+    margin-top: 10px;
+
+}
+#botao{
+    width: 100px;
+
+    height: 50px;
+
+    margin: 3px;
+
+    cursor: pointer;
+
+    background-color: rgb(31,31,31);
+
+    color: white;
+}
