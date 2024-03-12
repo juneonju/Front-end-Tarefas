@@ -43,24 +43,24 @@ let contadorPrioridade = 0;
 let contar = 0;
 
     botao.addEventListener("click", (event) => {
-        contar++;
-        let condicao = contar % 3;
-        botao.disabled = true;
-        contadorRegular++;
-        chamarsenha.innerHTML = "R" + contadorRegular;
-        let li = document.createElement("li");
-        li.textContent = "R" + contadorRegular;
-        ListadeSenhas.appendChild(li);
-        ListadeSenhas.insertBefore(li, ListadeSenhas.children[0]);
-        let falarRegular = document.createElement("textarea");
-        falarRegular.textContent = "Regular" + contadorRegular;
-        var voz = new SpeechSynthesisUtterance(falarRegular.value);
-        speechSynthesis.speak(voz);
-        setTimeout(() => {
-        botao.disabled = false;
-        }, 2000);
-        
-        if(condicao == 0){
+        if(contar < 3){
+                contar++
+                botao.disabled = true;
+                contadorRegular++;
+                chamarsenha.innerHTML = "R" + contadorRegular;
+                let li = document.createElement("li");
+                li.textContent = "R" + contadorRegular;
+                ListadeSenhas.appendChild(li);
+                ListadeSenhas.insertBefore(li, ListadeSenhas.children[0]);
+                let falarRegular = document.createElement("textarea");
+                falarRegular.textContent = "Regular" + contadorRegular;
+                var voz = new SpeechSynthesisUtterance(falarRegular.value);
+                speechSynthesis.speak(voz);
+                setTimeout(() => {
+                botao.disabled = false;
+                }, 2000);        
+        }else{
+                contar = 0
                 botao.disabled = true;
                 contadorPrioridade++;
                 chamarsenha.innerHTML = "P" + contadorPrioridade;
@@ -74,6 +74,6 @@ let contar = 0;
                 speechSynthesis.speak(voz);
                 setTimeout(() => {
                 botao.disabled = false;
-                }, 2000);        
+                }, 2000);
         }
 });
