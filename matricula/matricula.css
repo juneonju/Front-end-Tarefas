@@ -1,0 +1,73 @@
+*{
+    margin: auto;
+    text-align: center;
+}
+
+#titulo{
+
+    width: 136px;
+
+    border: solid;
+}
+#tabela{
+    margin-top: 5px;
+
+    border: solid;
+
+    height: 160px;
+
+    width: 700px;
+}
+#pergunta{
+
+    height: 50px;
+
+    width: 400px;
+
+    margin-top: 50px;
+
+    margin-bottom: 20px;
+  
+}
+#botao{
+
+    margin-left: 280px;
+
+}
+#Matricula{
+
+    border: solid;
+
+    height: 40px;
+
+    width: 200px;
+}
+#Data{
+
+    border: solid;
+
+    height: 40px;
+
+    width: 200px;
+}
+#Hora{
+
+    border: solid;
+
+    height: 40px;
+
+    width: 200px;
+}
+#tabela2{
+
+    margin-top: 5px;
+
+    border: solid;
+
+    height: 540px;
+
+    width: 700px;
+}
+.cabecalho{
+    padding: 5px;
+}

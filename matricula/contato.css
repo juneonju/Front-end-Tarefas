@@ -1,0 +1,34 @@
+*{
+    margin: auto;
+    text-align: center;
+}
+#contato{
+    border: solid;
+
+    height: 400px;
+
+    width: 300px;
+}
+#Nome{
+    margin-top: 50px;
+
+    width: 235px;
+}
+#Email{
+    margin-top: 10px;
+
+    width: 235px;
+}
+#Trabalho{
+    margin-top: 10px;
+
+    width: 235px;
+}
+#Texto{
+    margin-top: 10px;
+
+    resize: none;
+}
+#botao{
+    margin-left: 190px;
+}
