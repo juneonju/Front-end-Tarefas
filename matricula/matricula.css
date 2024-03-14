@@ -9,7 +9,7 @@
 
     border: solid;
 }
-#tabela{
+#matriculas{
     margin-top: 5px;
 
     border: solid;
@@ -18,7 +18,7 @@
 
     width: 700px;
 }
-#pergunta{
+#matricula{
 
     height: 50px;
 
@@ -34,31 +34,7 @@
     margin-left: 280px;
 
 }
-#Matricula{
-
-    border: solid;
-
-    height: 40px;
-
-    width: 200px;
-}
-#Data{
-
-    border: solid;
-
-    height: 40px;
-
-    width: 200px;
-}
-#Hora{
-
-    border: solid;
-
-    height: 40px;
-
-    width: 200px;
-}
-#tabela2{
+#tabeladiv{
 
     margin-top: 5px;
 
@@ -67,7 +43,14 @@
     height: 540px;
 
     width: 700px;
+
+    overflow: auto;
 }
 .cabecalho{
-    padding: 5px;
+
+    border: solid;
+
+    height: 40px;
+
+    width: 200px;
 }
