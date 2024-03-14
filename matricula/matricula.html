@@ -14,7 +14,7 @@
     <div id="matriculas">
         <input type="number" id="matricula">
         <br>
-        <a href="contato.html" id="contato">Contato</a>
+        <button id="contato">Contato</button>
         <button id="botao">Matricular</button>
         <br>
 
@@ -34,6 +34,47 @@
 
            </tr>
        </table>
+
+   </div>
+
+   <div id="modal">
+
+        <div id="formulario">
+
+            <label for="nome">Nome</label>
+            <input type="text" id="txtText">
+
+            <label for="email">Email</label>
+            <input type="email" name="" id="txtEmail">
+
+            <label for="empresa">Empresa</label>
+            <select name="" id="selectEmpresa">
+            <option value="" hidden>Onde você trabalha ?</option>
+            <option value="Senai">Senai</option>
+            <option value="Senac">Senac</option>
+            <option value="Sesi">Sesi</option>
+            <option value="ONU">ONU</option>
+            </select>
+
+            <label for="assunto">Assunto</label>
+            <select name="" id="selectAssunto">
+            <option value="" hidden>Selecione uma opção</option>
+            <option value="ErroSite">Erro no site</option>
+            <option value="Esqueci">Esqueci a matricula</option>
+            <option value="nãoEncontrada">matricula não encontrada</option>
+            <option value="Outro">Outro motivo</option>
+            </select>
+
+            <label for="menssagem">Mensagem</label>
+            <textarea name="" id="textMensagem" cols="30" rows="10"></textarea>
+
+            <div id="botoes">
+
+            <button id="botaoEnviar">Enviar</button>
+
+        </div>
+
+    </div>
 
    </div>
 

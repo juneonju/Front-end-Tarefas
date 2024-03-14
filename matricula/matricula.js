@@ -1,6 +1,8 @@
 const botao = document.querySelector("#botao")
 const pergunta = document.querySelector("#matricula")
 const tabela = document.querySelector("#tabela")
+const botaoContato = document.querySelector("#contato")
+const botaoEnviar = document.querySelector("#botaoEnviar")
 
 
 botao.addEventListener("click", (event) => {
@@ -31,3 +33,10 @@ botao.addEventListener("click", (event) => {
     hora.appendChild(hora2)
     }
 });
+
+botaoContato.addEventListener("click", (event) => {
+    modal.style.display = "flex";
+})
+botaoEnviar.addEventListener("click", (event) => {
+    modal.style.display = "none";
+})

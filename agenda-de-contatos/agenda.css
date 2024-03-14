@@ -2,56 +2,6 @@
     margin: auto;
     text-align: center;
 }
-
-#titulo{
-
-    width: 136px;
-}
-#matriculas{
-    margin-top: 5px;
-
-    border: solid;
-
-    height: 160px;
-
-    width: 700px;
-}
-#matricula{
-
-    height: 50px;
-
-    width: 400px;
-
-    margin-top: 50px;
-
-    margin-bottom: 20px;
-  
-}
-#botao{
-
-    margin-left: 280px;
-
-}
-#tabeladiv{
-
-    margin-top: 5px;
-
-    border: solid;
-
-    height: 540px;
-
-    width: 700px;
-
-    overflow: auto;
-}
-.cabecalho{
-
-    border: solid;
-
-    height: 40px;
-
-    width: 200px;
-}
 #modal{
     display: none;
     flex-direction: column;
@@ -69,7 +19,7 @@
     display: flex;
     position: fixed;
     width: 500px;
-    height: 500px;
+    height: 300px;
     gap: 10px;
     padding: 20px;
     justify-content: center;
@@ -77,3 +27,24 @@
     background-color: white;
     border: solid;
 }
+#titulo{
+    border: solid;
+    width: 300px;
+    text-align: center;
+}
+#agenda{
+    border: solid;
+    height: 500px;
+    width: 700px;
+}
+#botaoNovo{
+    margin-left: 15px;
+}
+#botoes{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border: solid;
+    width: 120px;
+}
+
