@@ -15,34 +15,51 @@
 
     <div id="agenda">
         <div id="botoes">
-            <button id="botaoNovo">Novo Contato</button>
+            <button id="botaoNovo" class="botao">Novo Contato</button>
         </div>
 
-        <table>
+        <div id="tabela">
+            <table id="tabela1">
 
-            <tr>
-                <th>Nome</th>
-                <th>Email</th>
-                <th>Telefone</th>
+                <tr>
+                    <th class="cabecalho">Nome</th>
+                    <th class="cabecalho">Email</th>
+                    <th class="cabecalho">Telefone</th>
+                    <th class="botaoMudança" id="editar2">Editar</th>
+                    <th class="botaoMudança" id="excluir2">Excluir</th>
 
-            </tr>
-
-        </table>
-
+                </tr>
+        
+            </table>
+        </div>
     </div>
 
     <div id="modal">
         <div id="formulario">
-            <label for="name">Nome</label>
-            <input type="text">
+            <label for="name" id="nome">Nome</label>
+            <input type="text" id="nome1">
 
-            <label for="email">Email</label>
-            <input type="text">
+            <label for="email" id="email">Email</label>
+            <input type="text" id="email1">
 
-            <label for="telefone">Telefone</label>
-            <input type="number">
+            <label for="telefone" id="telefone">Telefone</label>
+            <input type="number" id="telefone1">
 
-            <button id="botaoSalvar">Salvar</button>
+            <button id="botaoSalvar" class="botao">Salvar</button>
+        </div>
+    </div>
+    <div id="modal2">
+        <div id="formulario2">
+            <label for="name" id="nome2">Nome</label>
+            <input type="text" id="nome3">
+
+            <label for="email" id="email2">Email</label>
+            <input type="text" id="email3">
+
+            <label for="telefone" id="telefone2">Telefone</label>
+            <input type="number" id="telefone3">
+
+            <button id="botaoSalvar2" class="botao">Salvar</button>
         </div>
     </div>
     
