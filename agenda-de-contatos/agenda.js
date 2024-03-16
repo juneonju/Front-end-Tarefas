@@ -14,47 +14,51 @@ botaoNovo.addEventListener("click", (event) => {
     modal.style.display = "flex";
 });
 botaoSalvar.addEventListener("click", (event) => {
-    let linha = document.createElement("tr")
-    tabela.appendChild(linha)
+    if((nome.value != "") && (email.value != "") && (telefone.value != "")){
+        
 
-    let nome2 = document.createElement("td")
-    nome2.className = "cabecalho"
-    nome2.textContent = nome.value  
-    linha.appendChild(nome2) 
+        let linha = document.createElement("tr")
+        tabela.appendChild(linha)
 
-    let email2 = document.createElement("td")
-    email2.className = "cabecalho"
-    email2.textContent = email.value  
-    linha.appendChild(email2)
+        let nome2 = document.createElement("td")
+        nome2.className = "cabecalho"
+        nome2.textContent = nome.value  
+        linha.appendChild(nome2) 
 
-    let telefone2 = document.createElement("td")
-    telefone2.className = "cabecalho"
-    telefone2.textContent = telefone.value  
-    linha.appendChild(telefone2)
+        let email2 = document.createElement("td")
+        email2.className = "cabecalho"
+        email2.textContent = email.value  
+        linha.appendChild(email2)
 
-    let botaoEditar = document.createElement("td")
-    botaoEditar.className = "botaoMudança"
-    botaoEditar.innerHTML = "Editar"
-    linha.appendChild(botaoEditar)
+        let telefone2 = document.createElement("td")
+        telefone2.className = "cabecalho"
+        telefone2.textContent = telefone.value  
+        linha.appendChild(telefone2)
 
-    let botaoExcluir = document.createElement("td")
-    botaoExcluir.className = "botaoMudança"
-    botaoExcluir.innerHTML = "Excluir"
-    linha.appendChild(botaoExcluir)
-    modal.style.display = "none";
+        let botaoEditar = document.createElement("td")
+        botaoEditar.className = "botaoMudança"
+        botaoEditar.innerHTML = "Editar"
+        linha.appendChild(botaoEditar)
 
-    botaoExcluir.onclick = function(){
-        nome2.remove()
-        email2.remove()
-        telefone2.remove()
-        botaoEditar.remove()
-        botaoExcluir.remove()
-    }
+        let botaoExcluir = document.createElement("td")
+        botaoExcluir.className = "botaoMudança"
+        botaoExcluir.innerHTML = "Excluir"
+        linha.appendChild(botaoExcluir)
+        modal.style.display = "none";
     
-    botaoEditar.onclick = function(){
-        modal2.style.display = "flex";
-    }
-    botaoSalvar2.onclick = function(){
+
+        botaoExcluir.onclick = function(){
+            nome2.remove()
+            email2.remove()
+            telefone2.remove()
+            botaoEditar.remove()
+            botaoExcluir.remove()
+        }
+        
+        botaoEditar.onclick = function(){
+            modal2.style.display = "flex";
+        }
+        botaoSalvar2.onclick = function(){
         nome2.textContent = nomeEditado.value 
         linha.appendChild(nome2)
 
@@ -73,5 +77,6 @@ botaoSalvar.addEventListener("click", (event) => {
         linha.appendChild(botaoExcluir)
 
         modal2.style.display = "none";
+        }
     }
 });
