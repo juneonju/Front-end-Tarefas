@@ -1,0 +1,130 @@
+
+#container{
+    
+    display: flex;
+
+    flex-direction: column;
+
+    border: solid;
+
+    height: 900px;
+
+    width: 1300px;
+
+}
+
+#tituloLogo{
+
+    border: solid;
+
+    width: 1300px;
+
+    height: 200px;
+
+    text-align: center;
+
+}
+
+#titulo{
+    border: solid;
+}
+
+a{
+    display: inline;
+}
+
+#caminhos{
+    justify-content: center;
+
+    display: inline;
+
+    display: flex;
+
+    flex-direction: column;
+
+    border: solid;
+
+    width: 1300px;
+
+    height: 50px;
+
+}
+
+#inicio{
+    display: inline-block;
+}
+
+#especialidade{
+    display: inline-block;
+}
+
+#contato{
+    display: inline-block;
+}
+
+#agendamento{
+    display: inline-block;
+}
+
+#conteudo{
+
+    display: flex;
+
+    flex-direction: column;
+
+    border: solid;
+
+    width: 1300px;
+
+    height: 200px;
+
+}
+
+#caminhosConteudos{
+
+    display: flex;
+
+    flex-direction: row;
+
+    border: solid;
+
+    width: 1300px;
+
+    height: 200px;
+
+    justify-content: center;
+    
+    align-items: flex-end;
+}
+
+#Slogan{
+    
+    border: solid;
+
+    width: 400px;
+
+    height: 200px;
+}
+
+#credito{
+
+    border: solid;
+    
+    text-align: center;
+
+    width: 300px;
+
+    height: 200px;
+}
+
+#links{
+    
+    border: solid;
+
+    text-align: end;
+
+    width: 300px;
+
+    height: 200px;
+
+}
