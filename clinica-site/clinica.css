@@ -1,42 +1,110 @@
+*{
 
-#container{
-    
-    display: flex;
+    margin: 0; 
 
-    flex-direction: column;
+    padding: 0;
 
-    border: solid;
+}
 
-    height: 900px;
+body{
 
-    width: 1300px;
+    font-family: arial, helvetica, sans-serif;
+
+    font-size: 12px;
+
+}
+
+.menu{
+
+    list-style:none;
+
+    border:1px solid #c0c0c0;
+
+    float:left;
+
+    margin-left: 50px;
+
+}
+
+.menu li{
+
+    position:relative;
+
+    float:left;
+
+    border-right:1px solid #c0c0c0;
+
+}
+
+.menu li a{
+
+    color:#333; 
+
+    text-decoration:none; 
+
+    padding:5px 10px; 
+
+    display:block;
+
+}
+
+.menu li a:hover{
+
+    background:#333;
+
+    color:#fff;
+
+    text-shadow:0px 0px 5px #fff;
 
 }
 
 #tituloLogo{
 
+    display: flex;
+
+    flex-direction: row;
+
     border: solid;
 
-    width: 1300px;
+    width: 1200px;
 
-    height: 200px;
+    height: 100px;
 
-    text-align: center;
+    margin-left: 15%;
+
+    margin-top: 5%;
+
 
 }
 
 #titulo{
-    border: solid;
+    
 }
 
-a{
-    display: inline;
+#logo{
+
+    width: 80px;
+
+    margin-left: 400px;
+
+    margin-top: 9px;
+
+}
+
+#titulo{
+
+    position:relative;
+
+    float:left;
+
+    margin-left: 10px;
+        
+    margin-top: 18px;
 }
 
 #caminhos{
-    justify-content: center;
 
-    display: inline;
+    justify-content: center;
 
     display: flex;
 
@@ -44,26 +112,13 @@ a{
 
     border: solid;
 
-    width: 1300px;
+    width: 1200px;
 
     height: 50px;
 
-}
+    margin-left: 15%;
 
-#inicio{
-    display: inline-block;
-}
 
-#especialidade{
-    display: inline-block;
-}
-
-#contato{
-    display: inline-block;
-}
-
-#agendamento{
-    display: inline-block;
 }
 
 #conteudo{
@@ -74,9 +129,25 @@ a{
 
     border: solid;
 
-    width: 1300px;
+    height: 500px;
 
-    height: 200px;
+    width: 1200px;
+
+    margin-left: 15%;
+
+}
+
+#conteudoPrincipal{
+
+    border: solid;
+
+    height: 400px;
+
+    width: 1150px;
+
+    margin-left: 25px;
+
+    margin-top: 50px;
 
 }
 
@@ -84,47 +155,85 @@ a{
 
     display: flex;
 
-    flex-direction: row;
-
     border: solid;
 
-    width: 1300px;
+    width: 1200px;
 
-    height: 200px;
+    height: 100px;
 
-    justify-content: center;
-    
-    align-items: flex-end;
+    margin-left: 15%;
+
 }
 
 #Slogan{
-    
-    border: solid;
+
+    display: flex;
+
+    flex-direction: row;
 
     width: 400px;
 
-    height: 200px;
+    height: 100px;
+
+    margin-left: 20px;
+
+}
+
+#titulo2{
+
+    margin-top: 23px;
+
+    height: 50px;
+
+    width: 160px;
+
+}
+
+#imagem2{
+
+    margin-top: 10px;
+
+    width: 80px;
+
+    height: 80px;
+
 }
 
 #credito{
-
-    border: solid;
     
     text-align: center;
 
-    width: 300px;
+    width: 600px;
 
-    height: 200px;
+    height: 25px;
+
+    margin-top: 59px;
+
+    margin-left: 100px;
 }
 
 #links{
-    
-    border: solid;
 
-    text-align: end;
+    text-align: center;
 
-    width: 300px;
+    width: 100px;
 
-    height: 200px;
+    height: 75px;
 
+    margin-top: 15px;
+
+    margin-left: 350px;
+
+    margin-right: 50px;
+
+}
+#logo{
+    display: flex;
+
+    width: 100px;
+}
+#navegacao{
+    display: flex;
+
+    gap: 600px;
 }

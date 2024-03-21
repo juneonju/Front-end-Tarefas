@@ -1,0 +1,278 @@
+*{
+    margin: auto;
+
+    text-align: center;
+}
+body{
+    background-color: rgb(80, 66, 66);
+}
+#modal{
+    display: none;
+
+    flex-direction: column;
+
+    width: 100%;
+
+    height: 100%;
+
+    position: fixed;
+
+    top: 0px;
+
+    left: 0px;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: rgb(0,0,0,0.8);
+}
+#formulario{
+    flex-direction: column;
+
+    display: flex;
+
+    position: fixed;
+
+    width: 200px;
+
+    height: 300px;
+
+    gap: 10px;
+
+    padding: 20px;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: rgb(255, 255, 255);
+
+    border: solid;
+}
+#nome{
+    margin-left: 10px;
+}
+#nome1{
+    margin-left: 10px;
+}
+#email{
+    margin-left: 10px;
+}
+#email1{
+    margin-left: 10px;
+}
+#telefone{
+    margin-left: 10px;
+}
+#telefone1{
+    margin-left: 10px;
+}
+#botaoSalvar{
+
+    cursor: pointer;
+
+    width: 100px;
+
+    height: 40px;
+
+    cursor: pointer;
+
+    background-color: rgb(31,31,31);
+
+    color: white;
+}
+#titulo{
+    border: solid;
+
+    border-color: black;
+
+    background-color: rgb(31,31,31);
+
+    color: white;
+
+    height: 40px;
+
+    width: 300px;
+
+    text-align: center;
+
+    margin-top: 20px;
+}
+#agenda{
+    color: rgb(0, 0, 0);
+
+    background-color: rgba(4, 27, 31, 0.8);
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-top: 30px;
+
+    border: solid;
+
+    height: 800px;
+
+    width: 1000px;
+}
+#botaoNovo{
+    cursor: pointer;
+
+    width: 100px;
+
+    height: 40px;
+
+    cursor: pointer;
+
+    background-color: rgb(31,31,31);
+
+    color: white;
+}
+.botao{
+    opacity: 0.7;
+
+    background-color: black;
+
+    color: white;
+}
+#botoes{
+    margin-top: 90px;
+
+    margin-left: 58px;
+
+    height: 40px;
+
+    width: 100px;
+
+    border-radius: 20px;
+}
+#tabela{
+    color: rgb(0, 0, 0);
+
+    background-color: rgba(255, 255, 255, 0.8);
+
+    border: solid;
+
+    width: 880px;
+
+    height: 590px;
+
+    margin-bottom: 50px;
+
+    display: flex;
+
+    flex-direction: row;
+
+    overflow: auto;
+}
+#tabela1{
+    margin-top: 29px;
+
+}
+.cabecalho{
+    padding: 20px;
+
+    width: 180px;
+}
+.botaoMudança{
+    cursor: pointer;
+
+    width: 70px;
+
+    height: 50px;
+
+    cursor: pointer;
+
+    background-color: rgb(31,31,31);
+
+    color: white;
+}
+.botaoMudança:hover{
+    opacity: 0.7;
+
+    background-color: black;
+
+    color: white;
+}
+#editar2{
+    opacity: 0;
+}
+#excluir2{
+    opacity: 0;
+}
+#modal2{
+    display: none;
+
+    flex-direction: column;
+
+    width: 100%;
+
+    height: 100%;
+
+    position: fixed;
+
+    top: 0px;
+
+    left: 0px;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: rgb(0,0,0,0.8);
+}
+#formulario2{
+    flex-direction: column;
+
+    display: flex;
+
+    position: fixed;
+
+    width: 200px;
+
+    height: 300px;
+
+    gap: 10px;
+
+    padding: 20px;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: rgb(255, 255, 255);
+
+    border: solid;
+}
+#nome2{
+    margin-left: 10px;
+}
+#nome3{
+    margin-left: 10px;
+}
+#email2{
+    margin-left: 10px;
+}
+#email3{
+    margin-left: 10px;
+}
+#telefone2{
+    margin-left: 10px;
+}
+#telefone3{
+    margin-left: 10px;
+}
+#botaoSalvar2{
+    cursor: pointer;
+
+    width: 100px;
+
+    height: 40px;
+
+    cursor: pointer;
+
+    background-color: rgb(31,31,31);
+
+    color: white;
+}
