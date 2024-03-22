@@ -261,3 +261,23 @@ body{
 
     cursor: pointer;
 }
+
+#horaDiv{
+
+    position: fixed;
+
+    left: 10%;
+
+    margin-top: 35px;
+
+}
+
+#audio{
+
+    position: fixed;
+
+    left: 84%;
+
+    margin-top: 600px;
+
+}
