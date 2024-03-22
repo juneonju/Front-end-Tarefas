@@ -6,11 +6,45 @@
 
 }
 
+header{
+    width: 100%;
+
+    border: solid;
+}
+
+footer{
+    width: 100%;
+
+    height: 100px;
+
+    background-color: rgb(247, 163, 163);
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 53px;
+
+    border: solid;
+}
+
 body{
+
+    height: 100%;
+
+    width: 100%;
 
     font-family: arial, helvetica, sans-serif;
 
     font-size: 12px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    overflow: hidden;
 
 }
 
@@ -18,11 +52,13 @@ body{
 
     list-style:none;
 
-    border:1px solid #c0c0c0;
+    border:1px solid #000000;
 
     float:left;
 
     margin-left: 50px;
+
+    background-color: white;
 
 }
 
@@ -32,7 +68,7 @@ body{
 
     float:left;
 
-    border-right:1px solid #c0c0c0;
+    border-right:1px solid #f09292;
 
 }
 
@@ -64,28 +100,16 @@ body{
 
     flex-direction: row;
 
-    border: solid;
-
-    width: 1200px;
-
     height: 100px;
 
-    margin-left: 15%;
+    background-color: rgb(247, 163, 163);
 
-    margin-top: 5%;
-
-
-}
-
-#titulo{
-    
+    justify-content: center;
 }
 
 #logo{
 
     width: 80px;
-
-    margin-left: 400px;
 
     margin-top: 9px;
 
@@ -96,8 +120,6 @@ body{
     position:relative;
 
     float:left;
-
-    margin-left: 10px;
         
     margin-top: 18px;
 }
@@ -116,7 +138,9 @@ body{
 
     height: 50px;
 
-    margin-left: 15%;
+    margin-left: 17%;
+
+    background-color: lightblue;
 
 
 }
@@ -129,11 +153,13 @@ body{
 
     border: solid;
 
-    height: 500px;
+    height: 600px;
 
     width: 1200px;
 
-    margin-left: 15%;
+    margin-left: 17%;
+
+    background-color: lightblue;
 
 }
 
@@ -141,7 +167,7 @@ body{
 
     border: solid;
 
-    height: 400px;
+    height: 500px;
 
     width: 1150px;
 
@@ -151,19 +177,6 @@ body{
 
 }
 
-#caminhosConteudos{
-
-    display: flex;
-
-    border: solid;
-
-    width: 1200px;
-
-    height: 100px;
-
-    margin-left: 15%;
-
-}
 
 #Slogan{
 
@@ -171,17 +184,14 @@ body{
 
     flex-direction: row;
 
-    width: 400px;
-
-    height: 100px;
-
-    margin-left: 20px;
-
+    width: 300px;
 }
 
 #titulo2{
 
-    margin-top: 23px;
+    margin-top: 22px;
+
+    margin-left: 10px;
 
     height: 50px;
 
@@ -191,7 +201,9 @@ body{
 
 #imagem2{
 
-    margin-top: 10px;
+    margin-top: 7px;
+
+    margin-left: 10px;
 
     width: 80px;
 
@@ -203,13 +215,12 @@ body{
     
     text-align: center;
 
+    height: 50px;
+
     width: 600px;
 
-    height: 25px;
+    margin-top: 39px;
 
-    margin-top: 59px;
-
-    margin-left: 100px;
 }
 
 #links{
@@ -222,9 +233,7 @@ body{
 
     margin-top: 15px;
 
-    margin-left: 350px;
-
-    margin-right: 50px;
+    margin-left: 200px;
 
 }
 #logo{
@@ -235,5 +244,20 @@ body{
 #navegacao{
     display: flex;
 
-    gap: 600px;
+    gap: 700px;
+}
+
+#botaoTwitter{
+
+   padding: 2px;
+
+   cursor: pointer;
+
+}
+
+#botaoInsta{
+
+    padding: 2px;
+
+    cursor: pointer;
 }
