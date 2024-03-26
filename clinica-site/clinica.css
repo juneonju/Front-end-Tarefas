@@ -244,7 +244,7 @@ body{
 #navegacao{
     display: flex;
 
-    gap: 700px;
+    gap: 600px;
 }
 
 #botaoTwitter{
@@ -280,4 +280,94 @@ body{
 
     margin-top: 600px;
 
+}
+
+#abaEspecialidades{
+    position: relative;
+
+    border: solid;
+
+    height: 500px;
+
+    width: 1150px;
+
+    margin-left: 25px;
+
+    margin-top: 50px;
+
+    background-color: white;
+}
+
+#tabela{
+    border: solid;
+
+    width: 900px;
+
+    height: 130px;
+
+    margin-left: 120px;
+
+    margin-top: 80px;
+
+    background-color: white;
+
+    color: black;
+}
+
+.linha{
+    border: solid;
+
+}
+
+.th{
+    border: solid;
+
+    height: 30px;
+
+    width: 500px;
+}
+
+.td{
+    border: solid;
+
+    height: 30px;
+
+    width: 500px;
+}
+
+#conteudoPrincipal2{
+
+    height: 500px;
+
+    width: 1150px;
+
+    margin-left: 25px;
+
+    margin-top: 50px;
+
+}
+
+#conteudoPrincipal3{
+    height: 500px;
+
+    width: 1150px;
+
+    margin-left: 25px;
+
+    margin-top: 100px;
+}
+#conteudo1{
+    display: flex;
+
+    flex-direction: column;
+
+    border: solid;
+
+    height: 400px;
+
+    width: 1200px;
+
+    margin-left: 17%;
+
+    background-color: lightblue;
 }
