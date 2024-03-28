@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    height: 90vh;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    
+}
+
+header{
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    margin-top: auto;
+    height: 50px;
+}
+
+#tituloLogo{
+    border: solid;
+    background-color: rgb(247, 163, 163);
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+}
+
+#horaDiv{
+    width: 130px;
+    height: 50px;
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+
+#logoTitulo{
+    position: relative;
+    left: 590px;
+    display: flex;
+    gap: 20px;
+}
+
+#logoTitulo img{
+    position: relative;
+    top: 10px;
+}
+
+#logoTitulo h1{
+    position: relative;
+    top: 30px;
+}
+
+#caminhos{
+    border: solid;
+    height: 40px;
+    background-color: lightblue;
+}
+
+#navegacao{
+    display: flex;
+    gap: 1200px;
+    height: 40px;
+}
+
+.menu{
+    list-style:none;
+    border:1px solid #000000;
+    float:left;
+    background-color: white;
+    position: relative;
+    left: 100px;
+    top: 5px;
+    height: 28px;
+}
+
+.menu li{
+    position:relative;
+    float:left;
+    border-right:1px solid #000000;
+}
+
+.menu li a{
+    color:#333; 
+    text-decoration:none; 
+    padding:5px 10px; 
+    display:block;
+}
+
+.menu li a:hover{
+    background:#000000;
+    color:#00ffc8;
+    text-shadow:0px 0px 5px #00b7ff;
+}
+
+#botoes{
+    position: relative;
+    top: 1px;
+    width: 200px;
+}
+
+#botoes button{
+    width: 70px;
+    height: 30px;
+    margin: 3px;
+    cursor: pointer;
+    background-color: rgb(238, 238, 238);
+    color: rgb(0, 0, 0);
+}
+
+#conteudo{
+    border: solid;
+    height: 650px;
+    width: 1600px;
+    background-color: lightblue;
+    position: relative;
+    top: 30px;
+    left: 100px;
+    display: flex;
+}
+
+#conteudoPrincipal{
+    border: solid;
+    height: 500px;
+    position: relative;
+    left: 290px;
+    top: 70px;
+}
+
+#audio{
+    position: relative;
+    height: 60px;
+    top: 580px;
+    left: 300px;
+}
+
+#parteInferior{
+    border: solid;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(247, 163, 163);
+    padding: 1rem 2rem;
+    height: 80px;
+}
+
+#Slogan{
+    gap: 10px;
+    width: 350px;
+}
+
+#Slogan img{
+    position: relative;
+    top: 20px; 
+}
+
+#Slogan h2{
+    position: relative;
+    left: 60px;
+    bottom: 20px;
+}
+
+#credito{  
+    position: relative;
+    top: 35px;
+    left: 100px;
+    width: 300px;
+    height: 30px;
+}
+
+#links{
+    position: relative;
+    left: 350px;
+    width: 200px;
+}
+
+#conteudo2{
+    border: solid;
+    height: 770px;
+    width: 1600px;
+    background-color: lightblue;
+    position: relative;
+    top: 30px;
+    left: 100px;
+    display: flex;
+}
+
+#tabela{
+    position: relative;
+    left: 130px;
+    border: solid;
+    background-color: white;
+}
+
+.th{
+    border: solid;
+    height: 40px;
+    width: 320px;
+}
+
+.td{
+    border: solid;
+    height: 40px;
+    width: 320px;
+}
+
+#conteudoPrincipal2{
+    position: relative;
+    top: 100px;
+    left: 0px;
+}
+
+.texto{
+    padding: 20px;
+}
+
+#conteudo3{
+    border: solid;
+    height: 420px;
+    width: 1600px;
+    background-color: lightblue;
+    position: relative;
+    top: 180px;
+    left: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+#conteudo4{
+    border: solid;
+    height: 700px;
+    width: 1600px;
+    background-color: lightblue;
+    position: relative;
+    top: 30px;
+    left: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    width: 700px;
+    align-items: center;
+    position: relative;
+    top: 100px;
+}
+
+#formulario input{
+    height: 20px;
+    width: 400px;
+    text-align: center;
+}
+
+#formulario textarea{
+    width: 400px;
+}
+
+#formulario button{
+    width: 70px;
+    height: 30px;
+    margin: 3px;
+    cursor: pointer;
+    background-color: rgb(238, 238, 238);
+    color: rgb(0, 0, 0);
+}
+
+#areaTexto{
+    resize: none;
+}
+
+#mapa{
+    border: solid;
+    width: 600px;
+    height: 450px;
+    position: relative;
+    left: 100px;
+    top: 120px;
+}
+
+#conteudo5{
+    border: solid;
+    height: 620px;
+    width: 1000px;
+    background-color: lightblue;
+    position: relative;
+    top: 30px;
+    left: 400px;
+    display: flex;
+    flex-direction: row;
+}
+
+#formulario1{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: 400px;
+    position: relative;
+    left: 100px;
+    top: 50px;
+    text-align: center;
+}
+
+#endereco{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: 250px;
+    position: relative;
+    left: 100px;
+    top: 50px;
+    text-align: center;
+}
+
+#plano{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: 500px;
+    position: relative;
+    left: 100px;
+    top: 50px;
+    text-align: center; 
+}
+
+#plano textarea{
+    resize: none;
+}
+
+#plano button{
+    position: relative;
+    top: 90px;
+    left: 80px;
+    width: 70px;
+    height: 30px;
+    margin: 3px;
+    cursor: pointer;
+    background-color: rgb(238, 238, 238);
+    color: rgb(0, 0, 0);
+}
+
+.label{
+    background-color: rgb(238, 238, 238);
+    color: rgb(0, 0, 0);
+    border: solid;
+    text-align: center;
+}
