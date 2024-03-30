@@ -27,7 +27,6 @@ footer {
 }
 
 #tituloLogo{
-    border: solid;
     background-color: rgb(247, 163, 163);
     display: flex;
     flex-direction: row;
@@ -38,8 +37,8 @@ footer {
     width: 130px;
     height: 50px;
     position: relative;
-    top: 30px;
-    left: 50px;
+    top: 35px;
+    left: 100px;
 }
 
 #logoTitulo{
@@ -60,8 +59,7 @@ footer {
 }
 
 #caminhos{
-    border: solid;
-    height: 40px;
+    height: 50px;
     background-color: lightblue;
 }
 
@@ -73,12 +71,12 @@ footer {
 
 .menu{
     list-style:none;
-    border:1px solid #000000;
+    
     float:left;
     background-color: white;
     position: relative;
     left: 100px;
-    top: 5px;
+    top: 10px;
     height: 28px;
 }
 
@@ -96,14 +94,13 @@ footer {
 }
 
 .menu li a:hover{
-    background:#000000;
-    color:#00ffc8;
-    text-shadow:0px 0px 5px #00b7ff;
+    background-color: rgba(0, 0, 0, 0.6);
+    color:#ffffff;
 }
 
 #botoes{
     position: relative;
-    top: 1px;
+    top: 6px;
     width: 200px;
 }
 
@@ -112,26 +109,22 @@ footer {
     height: 30px;
     margin: 3px;
     cursor: pointer;
-    background-color: rgb(238, 238, 238);
-    color: rgb(0, 0, 0);
 }
 
 #conteudo{
-    border: solid;
     height: 650px;
-    width: 1600px;
+    width: 1200px;
     background-color: lightblue;
     position: relative;
-    top: 30px;
-    left: 100px;
+    top: 80px;
+    left: 300px;
     display: flex;
 }
 
 #conteudoPrincipal{
-    border: solid;
     height: 500px;
     position: relative;
-    left: 290px;
+    left: 120px;
     top: 70px;
 }
 
@@ -139,11 +132,10 @@ footer {
     position: relative;
     height: 60px;
     top: 580px;
-    left: 300px;
+    right: 180px;
 }
 
 #parteInferior{
-    border: solid;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     background-color: rgb(247, 163, 163);
@@ -182,21 +174,22 @@ footer {
 }
 
 #conteudo2{
-    border: solid;
-    height: 770px;
-    width: 1600px;
+    height: 600px;
+    width: 1500px;
     background-color: lightblue;
     position: relative;
-    top: 30px;
-    left: 100px;
+    top: 80px;
+    left: 190px;
     display: flex;
 }
 
 #tabela{
     position: relative;
-    left: 130px;
+    left: 80px;
+    top: 50px;
     border: solid;
     background-color: white;
+    height: 500px;
 }
 
 .th{
@@ -222,7 +215,6 @@ footer {
 }
 
 #conteudo3{
-    border: solid;
     height: 420px;
     width: 1600px;
     background-color: lightblue;
@@ -234,7 +226,6 @@ footer {
 }
 
 #conteudo4{
-    border: solid;
     height: 700px;
     width: 1600px;
     background-color: lightblue;
@@ -271,8 +262,6 @@ footer {
     height: 30px;
     margin: 3px;
     cursor: pointer;
-    background-color: rgb(238, 238, 238);
-    color: rgb(0, 0, 0);
 }
 
 #areaTexto{
@@ -280,7 +269,7 @@ footer {
 }
 
 #mapa{
-    border: solid;
+    
     width: 600px;
     height: 450px;
     position: relative;
@@ -289,7 +278,6 @@ footer {
 }
 
 #conteudo5{
-    border: solid;
     height: 620px;
     width: 1000px;
     background-color: lightblue;
@@ -348,13 +336,10 @@ footer {
     height: 30px;
     margin: 3px;
     cursor: pointer;
-    background-color: rgb(238, 238, 238);
-    color: rgb(0, 0, 0);
 }
 
 .label{
     background-color: rgb(238, 238, 238);
     color: rgb(0, 0, 0);
-    border: solid;
     text-align: center;
 }

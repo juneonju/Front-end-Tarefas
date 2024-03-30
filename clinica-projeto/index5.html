@@ -68,13 +68,13 @@
 
             <div id="formulario1">
                 <label for="nome2" class="label">Nome</label>
-                <input type="text" placeholder="Digite seu nome">
+                <input type="text" placeholder="Digite seu nome" id="nomeContato">
 
                 <label for="email2" class="label">Email</label>
-                <input type="email" placeholder="Digite seu email">
+                <input type="email" placeholder="Digite seu email" id="emailContato">
 
                 <label for="telefone2" class="label">Telefone</label>
-                <input type="number" placeholder="Digite seu telefone">
+                <input type="number" placeholder="Digite seu telefone" id="telefoneContato">
 
                 <select name="especialidade" id="especialidadeSelecao">
                     <option value="" hidden>Selecione uma Especialidade</option>
@@ -94,17 +94,17 @@
             </div>
 
             <div id="endereco">
-                <label for="endereço2" class="label">endereço</label>
-                <input type="number" placeholder="CEP">
-                <input type="text" placeholder="Rua">
-                <input type="number" placeholder="Numero">
-                <input type="text" placeholder="Complemento">
+                <label for="endereço2" class="label">Endereço</label>
+                <input type="number" placeholder="CEP" id="cepContato">
+                <input type="text" placeholder="Rua" id="ruaContato">
+                <input type="number" placeholder="Numero" id="numerocasaContato">
+                <input type="text" placeholder="Complemento" id="complementoContato">
             </div>
 
             <div id="plano">
 
                 <label for="Plano3" class="label">Plano de Saude</label>
-                <select name="plano2" id="plano2">
+                <select name="plano2" id="planoSelecao">
                     <option value="" hidden>Selecione um Plano</option>
                     <option value="unimed">Unimed</option>
                     <option value="smile">Smile</option>
@@ -112,7 +112,7 @@
                 </select>
 
                 <label for="" class="label">Data de Consulta</label>
-                <input type="date">
+                <input type="date" id="dataConsulta">
 
                 <label for="" class="label">Observações</label>
                 <textarea name="" id="" cols="30" rows="10" placeholder="Digite suas Observações aqui." maxlength="500"></textarea>
