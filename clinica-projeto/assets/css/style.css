@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main{
@@ -65,7 +67,7 @@ footer {
 
 #navegacao{
     display: flex;
-    gap: 1200px;
+    gap: 1100px;
     height: 40px;
 }
 
@@ -99,16 +101,41 @@ footer {
 }
 
 #botoes{
+    display: flex;
+    flex-direction: row;
     position: relative;
     top: 6px;
-    width: 200px;
+    width: 300px;
 }
 
 #botoes button{
-    width: 70px;
+   margin: 0 20px;
+}
+
+#botaoTwitter{
+    border-radius: 50%;
+    width: 30px;
     height: 30px;
-    margin: 3px;
-    cursor: pointer;
+}
+
+#botaoInsta{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+#textoTT{
+    width: 50px;
+    position: relative;
+    right: 15px;
+    top: 7px;
+}
+
+#textoInsta{
+    width: 80px;
+    position: relative;
+    right: 15px;
+    top: 7px;
 }
 
 #conteudo{
@@ -116,7 +143,7 @@ footer {
     width: 1200px;
     background-color: lightblue;
     position: relative;
-    top: 80px;
+    top: 30px;
     left: 300px;
     display: flex;
 }
@@ -150,27 +177,33 @@ footer {
 
 #Slogan img{
     position: relative;
+    left: 90px;
     top: 20px; 
 }
 
 #Slogan h2{
     position: relative;
-    left: 60px;
+    left: 150px;
     bottom: 20px;
 }
 
 #credito{  
     position: relative;
     top: 35px;
-    left: 100px;
-    width: 300px;
+    left: 120px;
+    width: 400px;
     height: 30px;
 }
 
 #links{
     position: relative;
-    left: 350px;
+    left: 390px;
     width: 200px;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
 }
 
 #conteudo2{
@@ -178,7 +211,7 @@ footer {
     width: 1500px;
     background-color: lightblue;
     position: relative;
-    top: 80px;
+    top: 30px;
     left: 190px;
     display: flex;
 }
@@ -215,11 +248,11 @@ footer {
 }
 
 #conteudo3{
-    height: 420px;
+    height: 460px;
     width: 1600px;
     background-color: lightblue;
     position: relative;
-    top: 180px;
+    top: 30px;
     left: 100px;
     display: flex;
     flex-direction: column;
