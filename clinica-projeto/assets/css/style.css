@@ -223,9 +223,6 @@ footer {
     top: 10px;
 }
 
-#especialidadeEscolha select{
-}
-
 #tabela1{
     position: relative;
     left: 80px;
@@ -241,8 +238,7 @@ footer {
     top: 50px;
     border: solid;
     background-color: white;
-    height: 50px;
-    display: none; 
+    height: 50px; 
 }
 
 #tabela3{
