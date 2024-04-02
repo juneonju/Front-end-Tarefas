@@ -28,6 +28,10 @@ footer {
     height: 50px;
 }
 
+placeholder{
+    text-align: center;
+}
+
 #tituloLogo{
     background-color: rgb(247, 163, 163);
     display: flex;
