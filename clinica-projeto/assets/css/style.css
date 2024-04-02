@@ -216,25 +216,77 @@ footer {
     display: flex;
 }
 
-#tabela{
+#especialidadeEscolha{
+    height: 30px;
+    position: relative;
+    left: 193px;
+    top: 10px;
+}
+
+#especialidadeEscolha select{
+}
+
+#tabela1{
     position: relative;
     left: 80px;
     top: 50px;
     border: solid;
     background-color: white;
-    height: 500px;
+    height: 50px;
+}
+
+#tabela2{
+    position: relative;
+    right: 551px;
+    top: 50px;
+    border: solid;
+    background-color: white;
+    height: 50px;
+    display: none; 
+}
+
+#tabela3{
+    position: relative;
+    right: 551px;
+    top: 50px;
+    border: solid;
+    background-color: white;
+    height: 50px;
+    display: none;
+}
+
+#tabela4{
+    position: relative;
+    right: 551px;
+    top: 50px;
+    border: solid;
+    background-color: white;
+    height: 50px;
+    display: none;
+}
+
+
+#tabela5{
+    position: relative;
+    right: 551px;
+    top: 50px;
+    border: solid;
+    background-color: white;
+    height: 50px;
+    display: none;
 }
 
 .th{
     border: solid;
     height: 40px;
-    width: 320px;
+    width: 200px;
 }
 
 .td{
     border: solid;
     height: 40px;
-    width: 320px;
+    width: 200px;
+    text-align: center;
 }
 
 #conteudoPrincipal2{

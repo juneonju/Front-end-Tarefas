@@ -31,3 +31,19 @@ botaoEnviar.addEventListener("click", (event) => {
     }
 });
 
+const especialidadeEscolha = document.querySelector("especialidadeEscolha")
+
+especialidadeEscolha.addEventListener("click", (event) => {
+    
+    if(especialidadeEscolha.value == "geralValor"){
+        tabela2.style.display = "flexbox";
+    }else if(especialidadeEscolha.value == "nutricionistaValor"){
+        tabela3.style.display = "flexbox";
+    }else if(especialidadeEscolha.value == "oftamologistaValor"){
+        tabela4.style.display = "flexbox";
+    }else if(especialidadeEscolha.value == "cardiologiaValor"){
+        tabela5.style.display = "flexbox";
+    }else{
+        alert("ta dando errado")
+    }
+});
