@@ -6,7 +6,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/javascript/index.js" defer></script>
+    <script src="assets/javascript/hora.js" defer></script>
+    <script src="assets/javascript/pagina2.js" defer></script>
 
     <title>Clinica</title>
 </head>
@@ -67,16 +68,41 @@
 
         <div id="conteudo2">
 
-            <table id="tabela">
+            <select name="" id="especialidadeEscolha" onchange="mudarTabela()">
+                <option value="" hidden>Especialidades</option>
+                <option value="1">Clinico Geral</option>
+                <option value="2">Nutricionista</option>
+                <option value="3">oftamologista</option>
+                <option value="4">cardiologista</option>
+            </select>
 
-                <thead id="tabelaHead">
+            <table id="tabela1">
+
+                <thead id="tabelaHead1">
+
+                    <tr class="linha1">
+
+                        <th class="th">Nome</th>
+                        <th class="th">Especialidade</th>
+                        <th class="th">Convênio</th>
+
+                    </tr>
+
+                </thead>
+
+                  </tbody>
+        
+            </table>
+
+            <table id="tabela3">
+
+                <thead id="tabelaHead3">
 
                     <tr class="linha">
 
                         <th class="th">Nome</th>
                         <th class="th">Especialidade</th>
-                        <th class="th">Convenios</th>
-                        <th class="th">CRM/AL</th>
+                        <th class="th">Convênio</th>
 
                     </tr>
 
@@ -86,75 +112,115 @@
 
                     <tr class="linha">
 
-                      <td class="td"></th>
-                      <td class="td"></td>
-                      <td class="td"></td>
-                      <td class="td"></td>
+                      <td class="td">Carla</th>
+                      <td class="td">Nutricionista</td>
+                      <td class="td">Unimed</td>
 
                     </tr>
 
                     <tr class="linha">
 
-                      <td class="td"></th>
-                      <td class="td"></td>
-                      <td class="td"></td>
-                      <td class="td"></td>
+                      <td class="td">Carlos</th>
+                      <td class="td">Nutricionista</td>
+                      <td class="td">Hapvida</td>
 
                     </tr>
 
                     <tr class="linha">
 
-                      <td class="td"></th>
-                      <td class="td"></td>
-                      <td class="td"></td>
-                      <td class="td"></td>
+                      <td class="td">Cecilia</th>
+                      <td class="td">Nutricionista</td>
+                      <td class="td">SUS</td>
 
                     </tr>
 
                     <tr class="linha">
 
-                      <td class="td"></th>
-                      <td class="td"></td>
-                      <td class="td"></td>
-                      <td class="td"></td>
+                      <td class="td">Carol</th>
+                      <td class="td">Nutricionista</td>
+                      <td class="td">Smile</td>
+
+                    </tr>
+
+                  </tbody>
+        
+            </table>
+
+            <table id="tabela4">
+
+                <thead id="tabelaHead4">
+
+                    <tr class="linha">
+
+                        <th class="th">Nome</th>
+                        <th class="th">Especialidade</th>
+                        <th class="th">Convênio</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="tabelaBody">
+
+                    <tr class="linha">
+
+                      <td class="td">Roberto</th>
+                      <td class="td">Oftamologista</td>
+                      <td class="td">SUS</td>
 
                     </tr>
 
                     <tr class="linha">
 
-                        <td class="td"></th>
-                        <td class="td"></td>
-                        <td class="td"></td>
-                        <td class="td"></td>
-  
-                      </tr>
+                      <td class="td">Roberta</th>
+                      <td class="td">Oftamologista</td>
+                      <td class="td">Unimed</td>
 
-                      <tr class="linha">
+                    </tr>
 
-                        <td class="td"></th>
-                        <td class="td"></td>
-                        <td class="td"></td>
-                        <td class="td"></td>
-  
-                      </tr>
+                    <tr class="linha">
 
-                      <tr class="linha">
+                      <td class="td">Renato</th>
+                      <td class="td">Oftamologista</td>
+                      <td class="td">Smile</td>
 
-                        <td class="td"></th>
-                        <td class="td"></td>
-                        <td class="td"></td>
-                        <td class="td"></td>
-  
-                      </tr>
+                    </tr>
 
-                      <tr class="linha">
+                  </tbody>
+        
+            </table>
 
-                        <td class="td"></th>
-                        <td class="td"></td>
-                        <td class="td"></td>
-                        <td class="td"></td>
-  
-                      </tr>
+            <table id="tabela5">
+
+                <thead id="tabelaHead5">
+
+                    <tr class="linha">
+
+                        <th class="th">Nome</th>
+                        <th class="th">Especialidade</th>
+                        <th class="th">Convênio</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="tabelaBody">
+
+                    <tr class="linha">
+
+                      <td class="td">Cicero</th>
+                      <td class="td">Cardiologista</td>
+                      <td class="td">SUS</td>
+
+                    </tr>
+
+                    <tr class="linha">
+
+                      <td class="td">Eduardo</th>
+                      <td class="td">Cardiologista</td>
+                      <td class="td">Smile</td>
+
+                    </tr>
 
                   </tbody>
         
