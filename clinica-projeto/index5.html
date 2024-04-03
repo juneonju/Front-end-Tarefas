@@ -78,18 +78,16 @@
                 <label for="telefone2" class="label">Telefone</label>
                 <input type="number" placeholder="Digite seu telefone" id="telefoneContato">
 
-                <select name="especialidade" id="especialidadeSelecao">
-                    <option value="" hidden>Selecione uma Especialidade</option>
-                    <option value="nutricionista">Nutricionista</option>
-                    <option value="oftamologia">Oftamologia</option>
-                    <option value="cardiologia">Cardiologia</option>
+                <select name="especialidade" id="especialidadeSelecao" onchange="buscaMedicos(this.value)">
+                    <option value="" hidden>Selecione uma especialidade</option>
+                    <option value="Geral">Clinico Geral</option>
+                    <option value="nutri">Nutricionista</option>
+                    <option value="ofta">Oftamologia</option>
+                    <option value="cardio">Cardiologia</option>
                 </select>
 
                 <select name="medico" id="medicoSelecao">
-                    <option value="" hidden>Escolha um medico</option>
-                    <option value="Gabriel">Gabriel</option>
-                    <option value="Ryan">Ryan</option>
-                    <option value="Arthur">Arthur</option>
+                <option value="" hidden>Selecione um Medico</option>
                 </select>
 
 

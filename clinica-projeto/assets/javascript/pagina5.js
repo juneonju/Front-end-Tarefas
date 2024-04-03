@@ -4,7 +4,6 @@ const telefoneContato = document.querySelector("#telefoneContato");
 const cepContato = document.querySelector("#cepContato");
 const ruaContato = document.querySelector("#ruaContato");
 const numerocasaContato = document.querySelector("#numerocasaContato");
-const complementoContato = document.querySelector("#complementoContato");
 const dataConsulta = document.querySelector("#dataConsulta");
 const especialidadeSelecao = document.querySelector("#especialidadeSelecao");
 const medicoSelecao = document.querySelector("#medicoSelecao");
@@ -31,10 +30,44 @@ cepContato.addEventListener("keypress", (event) => {
 botaoEnviar.addEventListener("click", (event) => {
     if((nomeContato.value === "") || (emailContato.value === "") || (telefoneContato.value === "") 
     || (cepContato.value === "") || (ruaContato.value === "") || (numerocasaContato.value === "")
-    || (complementoContato.value === "") || (dataConsulta.value === "") || (especialidadeSelecao.value === "")
+    || (dataConsulta.value === "") || (especialidadeSelecao.value === "")
     || (medicoSelecao.value === "") || (planoSelecao.value === "")){
         alert("você não vai ser atendido em")
     }else{
         alert("você vai ser atendido meu mano")
     }
 });
+
+var especialidade = {
+    "especialidades": [
+        {"sigla": "Geral", "nome": "Clinico Geral", "medicos": ["julio"]},
+        {"sigla": "nutri", "nome": "nutricionista", "medicos": ["carla", "carlos", "cecilia", "carol"]},
+        {"sigla": "ofta", "nome": "Oftamologista", "medicos": ["roberto", "roberta", "renato"]},
+        {"sigla": "cardio", "nome": "Cardiologista", "medicos": ["cicero", "eduardo"]}
+    ]};
+
+function buscaMedicos(e){
+    document.querySelector("#medicoSelecao").innerHTML = '';
+    var medico_select = document.querySelector("#medicoSelecao");
+     
+    var num_especialidades = especialidade.especialidades.length;
+    var j_index = -1;
+     
+    for(var x=0;x<num_especialidades;x++){
+           if(especialidade.especialidades[x].sigla == e){
+              j_index = x;
+           }
+    }
+     
+    if(j_index != -1){
+        
+        especialidade.especialidades[j_index].medicos.forEach(function(medicoSelecao){
+            var med_opts = document.createElement("option");
+            med_opts.setAttribute('value',medicoSelecao);
+            med_opts.innerHTML = medicoSelecao;
+            medico_select.appendChild(med_opts);
+        });
+    }else{
+            document.querySelector("#medicoSelecao").innerHTML = '';
+    }
+}
