@@ -211,12 +211,12 @@ placeholder{
 }
 
 #conteudo2{
-    height: 600px;
-    width: 1500px;
+    height: 360px;
+    width: 1040px;
     background-color: lightblue;
     position: relative;
     top: 30px;
-    left: 190px;
+    left: 400px;
     display: flex;
 }
 
@@ -238,16 +238,7 @@ placeholder{
 
 #tabela2{
     position: relative;
-    right: 551px;
-    top: 50px;
-    border: solid;
-    background-color: white;
-    height: 50px; 
-}
-
-#tabela3{
-    position: relative;
-    right: 551px;
+    left: 78px;
     top: 50px;
     border: solid;
     background-color: white;
@@ -255,9 +246,20 @@ placeholder{
     display: none;
 }
 
+#tabela3{
+    position: relative;
+    left: 78px;
+    top: 50px;
+    border: solid;
+    background-color: white;
+    height: 50px;
+    display: none;
+    
+}
+
 #tabela4{
     position: relative;
-    right: 551px;
+    left: 78px;
     top: 50px;
     border: solid;
     background-color: white;
@@ -268,7 +270,7 @@ placeholder{
 
 #tabela5{
     position: relative;
-    right: 551px;
+    left: 78px;
     top: 50px;
     border: solid;
     background-color: white;
