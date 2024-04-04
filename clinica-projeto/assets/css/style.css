@@ -336,12 +336,13 @@ placeholder{
 
 #formulario input{
     height: 20px;
-    width: 400px;
+    width: 300px;
     text-align: center;
 }
 
 #formulario textarea{
-    width: 400px;
+    width: 300px;
+    resize: none;
 }
 
 #formulario button{

@@ -80,7 +80,7 @@
 
                 <select name="especialidade" id="especialidadeSelecao" onchange="buscaMedicos(this.value)">
                     <option value="" hidden>Selecione uma especialidade</option>
-                    <option value="Geral">Clinico Geral</option>
+                    <option value="geral">Clinico Geral</option>
                     <option value="nutri">Nutricionista</option>
                     <option value="ofta">Oftamologia</option>
                     <option value="cardio">Cardiologia</option>
@@ -119,6 +119,8 @@
                 <textarea name="" id="" cols="30" rows="10" placeholder="Digite suas Observações aqui." maxlength="500"></textarea>
 
                 <button id="botaoEnviar">Enviar</button>
+
+                <span id="mensagemAgendamento"></span>
             </div>
 
         </div>

@@ -5,10 +5,9 @@ const cepContato = document.querySelector("#cepContato");
 const ruaContato = document.querySelector("#ruaContato");
 const numerocasaContato = document.querySelector("#numerocasaContato");
 const dataConsulta = document.querySelector("#dataConsulta");
-const especialidadeSelecao = document.querySelector("#especialidadeSelecao");
-const medicoSelecao = document.querySelector("#medicoSelecao");
 const planoSelecao = document.querySelector("#planoSelecao");
 const botaoEnviar = document.querySelector("#botaoEnviar");
+const mensagem = document.querySelector("#mensagemAgendamento")
 
 cepContato.addEventListener("keypress", (event) => {
     if (event.key === "Enter") {
@@ -32,42 +31,47 @@ botaoEnviar.addEventListener("click", (event) => {
     || (cepContato.value === "") || (ruaContato.value === "") || (numerocasaContato.value === "")
     || (dataConsulta.value === "") || (especialidadeSelecao.value === "")
     || (medicoSelecao.value === "") || (planoSelecao.value === "")){
-        alert("você não vai ser atendido em")
+        
+        mensagem.innerHTML = "Existem campos vazios."
     }else{
-        alert("você vai ser atendido meu mano")
+        mensagem.innerHTML = "Agendamento concluido."
     }
 });
 
-var especialidade = {
-    "especialidades": [
-        {"sigla": "Geral", "nome": "Clinico Geral", "medicos": ["julio"]},
-        {"sigla": "nutri", "nome": "nutricionista", "medicos": ["carla", "carlos", "cecilia", "carol"]},
-        {"sigla": "ofta", "nome": "Oftamologista", "medicos": ["roberto", "roberta", "renato"]},
-        {"sigla": "cardio", "nome": "Cardiologista", "medicos": ["cicero", "eduardo"]}
-    ]};
+const selectEsp = document.querySelector("#especialidadeSelecao")
+const selectMed = document.querySelector("#medicoSelecao")
 
-function buscaMedicos(e){
-    document.querySelector("#medicoSelecao").innerHTML = '';
-    var medico_select = document.querySelector("#medicoSelecao");
-     
-    var num_especialidades = especialidade.especialidades.length;
-    var j_index = -1;
-     
-    for(var x=0;x<num_especialidades;x++){
-           if(especialidade.especialidades[x].sigla == e){
-              j_index = x;
-           }
+let geral = ["Julio"]
+let nutricionista = ["Carla", "Carlos", "Cecilia", "Carol"]
+let oftamologista = ["Roberto", "Roberta", "Renato"]
+let cardiologista = ["Cicero", "Eduardo"]
+
+selectEsp.addEventListener("change", (event) => {
+    limparSelect()
+    if(selectEsp !== ""){
+        if(selectEsp.value === "Geral"){
+            preencherSelect(geral)
+        }else if(selectEsp.value === "nutri"){
+            preencherSelect(nutricionista)
+        }else if(selectEsp.value === "ofta"){
+            preencherSelect(oftamologista)
+        }else if(selectEsp.value === "cardio"){
+            preencherSelect(cardiologista)
+        }else{
+            alert("error")
+        }
     }
-     
-    if(j_index != -1){
+});
+
+function preencherSelect(selecionarMedicos){
+    for (let index = 0; index < selecionarMedicos.length; index++) {
+        let option = document.createElement("option");
+        option.textContent = selecionarMedicos[index];
+        selectMed.appendChild(option);
         
-        especialidade.especialidades[j_index].medicos.forEach(function(medicoSelecao){
-            var med_opts = document.createElement("option");
-            med_opts.setAttribute('value',medicoSelecao);
-            med_opts.innerHTML = medicoSelecao;
-            medico_select.appendChild(med_opts);
-        });
-    }else{
-            document.querySelector("#medicoSelecao").innerHTML = '';
     }
+}
+
+function limparSelect(){
+    selectMed.innerHTML = "";
 }
