@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+#container{
+    border: solid;
+    height: 400px;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+    top: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#inserirInformacao{
+    border: solid;
+    height: 340px;
+    width: 300px;
+    position: relative;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.cssSelect{
+    width: 250px;
+}
+
+#botaoProcurar{
+    width: 90px;
+}
+
+#informacao{
+    border: solid;
+    height: 340px;
+    width: 300px;
+    position: relative;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+}
