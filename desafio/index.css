@@ -1,0 +1,19 @@
+#conteudo {
+    background: lightblue;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.btn {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 80px;
+    border-radius: 5px; 
+}
