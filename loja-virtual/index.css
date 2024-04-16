@@ -1,0 +1,19 @@
+body{
+    display: flex;
+}
+
+#categoria{
+    border: solid;
+    height: 800px;
+    width: 300px;
+    text-align: center;
+}
+
+#carrinho{
+    border: solid;
+    height: 800px;
+    width: 300px;
+    position: relative;
+    left: 1300px;
+    text-align: center;
+}
