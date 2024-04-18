@@ -1,6 +1,9 @@
 const categoria = document.querySelector("#campo-categoria")
 const carrinho = document.querySelector("#campo-carrinho")
 const produto = document.querySelector("#campo-produto")
+const botaoSair = document.querySelector("#botaoSair")
+const botaoAdicionar = document.querySelector("#botaoAdicionar")
+const modal = document.querySelector("#modal")
 
 
 window.addEventListener("load", function (event) {
@@ -70,6 +73,33 @@ function mostrarProdutosCategorias(categoria2) {
         produto.appendChild(produtosImg);
         produto.appendChild(produtosH3);
         produto.appendChild(produtosPreco);
+
+        produtosImg.addEventListener("click", (event) =>{
+            
+            modal.appendChild(produtosImg)
+            produtosImg.id = "produtosModal";
+            modal.appendChild(produtosH3);
+            produtosH3.id = "produtosH3Modal";
+            modal.appendChild(produtosPreco);
+            produtosPreco.id = "produtostPModal";
+            modal.style.display = "block";
+
+        });
+
+        botaoSair.addEventListener("click", (event) => {
+
+            modal.removeChild(produtosImg)
+            modal.removeChild(produtosH3)
+            modal.removeChild(produtosPreco)
+            produto.appendChild(produtosImg);
+            produtosImg.id = "produtosImg";
+            produto.appendChild(produtosH3);
+            produtosH3.id = "produtosH3";
+            produto.appendChild(produtosPreco);
+            produtosPreco.id = "produtostP";
+            modal.style.display = "none";
+
+        });
 
     }
 }
