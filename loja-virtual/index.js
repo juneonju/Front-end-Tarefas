@@ -1,9 +1,12 @@
-const categoria = document.querySelector("#campo-categoria")
-const carrinho = document.querySelector("#campo-carrinho")
-const produto = document.querySelector("#campo-produto")
-const botaoSair = document.querySelector("#botaoSair")
-const botaoAdicionar = document.querySelector("#botaoAdicionar")
-const modal = document.querySelector("#modal")
+const categoria = document.querySelector("#campo-categoria");
+const carrinho = document.querySelector("#campo-carrinho");
+const produto = document.querySelector("#campo-produto");
+const botaoSair = document.querySelector("#botaoSair");
+const botaoAdicionar = document.querySelector("#botaoAdicionar");
+const modal = document.querySelector("#modal");
+const imagensProduto = document.querySelector("#imagensProduto");
+const textoProduto = document.querySelector("#textoProduto");
+const precoProduto = document.querySelector("#precoProduto");
 
 
 window.addEventListener("load", function (event) {
@@ -68,7 +71,7 @@ function mostrarProdutosCategorias(categoria2) {
         let produtosPreco = document.createElement("h4");
 
         produtosPreco.id = "produtostP";
-        produtosPreco.textContent = produtos[index].price;
+        produtosPreco.textContent = "R$" + produtos[index].price;
         
         produto.appendChild(produtosImg);
         produto.appendChild(produtosH3);
@@ -76,28 +79,20 @@ function mostrarProdutosCategorias(categoria2) {
 
         produtosImg.addEventListener("click", (event) =>{
             
-            modal.appendChild(produtosImg)
-            produtosImg.id = "produtosModal";
-            modal.appendChild(produtosH3);
-            produtosH3.id = "produtosH3Modal";
-            modal.appendChild(produtosPreco);
-            produtosPreco.id = "produtostPModal";
+            imagensProduto.src = produtosImg.src;
+            imagensProduto.id = "produtosModal";
+            textoProduto.textContent = produtosH3.textContent
+            textoProduto.id = "produtosH3Modal";
+            precoProduto.textContent = "R$ " + produtosPreco.textContent
+            precoProduto.id = "produtostPModal";
             modal.style.display = "block";
 
         });
 
         botaoSair.addEventListener("click", (event) => {
 
-            modal.removeChild(produtosImg)
-            modal.removeChild(produtosH3)
-            modal.removeChild(produtosPreco)
-            produto.appendChild(produtosImg);
-            produtosImg.id = "produtosImg";
-            produto.appendChild(produtosH3);
-            produtosH3.id = "produtosH3";
-            produto.appendChild(produtosPreco);
-            produtosPreco.id = "produtostP";
             modal.style.display = "none";
+            
 
         });
 
