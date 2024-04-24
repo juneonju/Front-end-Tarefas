@@ -4,7 +4,6 @@
 }
 
 body{
-    display: flex;
     background-color: lightblue;
 }
 
@@ -13,69 +12,118 @@ img{
     height: 85px;
 }
 
-#campo-categoria{
-    height: 800px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+#pagina {
+    height: 1000px;
+    width: 1500px;
     position: relative;
     top: 50px;
     left: 100px;
-    text-align: center;
-    background-color: beige;
 }
 
-#campo-categoria button{
-    height: 30px;
-    margin: 10px 0px;
+#produtos-carrinho-botoes {
+    display: flex;
+    height: 900px;
+    width: 1500px;
 }
+
+#campo-categoria{
+    height: 30px;
+    width: 1340px;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    background-color: beige;
+    gap: 10px;
+}
+
 #campo-produto{
-    height: 800px;
-    width: 1000px;
+    height: 840px;
+    width: 1040px;
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    position: relative;
-    top: 50px;
-    left: 100px;
     background-color: white;
+    align-items: center;
+    gap: 2px;
+}
+
+#campo-produto img, h3, h4 {
+    position: relative;
+    top: 15px;
+}
+
+#campo-produto img {
+    border: solid;
+}
+
+#campo-carrinho {
+    height: 700px;
+    width: 294px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    background-color: lightblue;
+    overflow: auto;
     align-items: center;
 }
 
-#campo-carrinho{
-    height: 800px;
-    width: 300px;
+#imagensNoCarrinho {
+    border: solid;
+    height: 70px;
+    width: 90px;
+}
+
+#botoes {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    gap: 10px;
+    height: 100px;
+    width: 294px;
+    align-items: center;
+}
+
+#botoes button {
     position: relative;
-    top: 50px;
-    left: 100px;
-    text-align: center;
-    background-color: beige;
+    top: 40px;
+}
+
+.botao {
+    background-color: white;
+    border-radius: 20px;
+    height: 30px;
+    width: 200px;
+}
+
+.botao:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#botaoLimpar {
+    width: 60px;
 }
 
 #modal{
     border: solid;
     height: 600px;
-    width: 600px;
+    width: 500px;
     position: absolute;
     top: 150px;
     left: 650px;
     background-color: beige;
     display: none;
+    flex-direction: column;
 }
 
 #botaoSair{
     position: relative;
+    left: 350px;
+    bottom: 350px;
     font-size: x-large;
     height: 50px;
     width: 50px;
-    border-radius: 50px;
-    padding: 10px;
-    bottom:250px;
-    left: 500px;
+    border-radius: 100%;
 }
 
 #botaoSair:hover{
@@ -84,16 +132,20 @@ img{
 
 #botaoAdicionar{
     position: relative;
-    font-size: large;
+    top: 80px;
+    left: 50px;
     height: 50px;
-    width: 220px;
-    top: 150px;
-    padding: 10px;
+    width: 250px;
     border: solid;
 }
 
 #botaoAdicionar:hover{
     cursor: pointer;
+}
+
+#produtosImg:hover{
+    cursor: pointer;
+    opacity: 0.8;
 }
 
 #produtosModal{
@@ -105,18 +157,110 @@ img{
     border: solid;
 }
 
-#produtosH3Modal{
+#descricaoDiv {
+    border: solid;
     position: relative;
-    width: 200px;
-    top: 50px;
+    height: 150px;
+    width: 250px;
+    top: 20px;
     left: 55px;
     font-size: large;
+    overflow: auto;
 }
 
 #produtostPModal{
     position: relative;
     width: 200px;
-    top: 140px;
+    top: 250px;
     left: 55px;
     font-size: xx-large;
+}
+
+#carrinho-botoes {
+    height: 840px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: beige;
+    overflow: auto;
+}
+
+#modal2 {
+    border: solid;
+    height: 600px;
+    width: 1450px;
+    position: absolute;
+    top: 80px;
+    background-color: beige;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#titulos {
+    display: flex;
+    gap: 150px;
+    width: 600px;
+    position: relative;
+    left: 50px;
+}
+
+#produtosInfo {
+    border: solid;
+    height: 550px;
+    width: 700px;
+}
+
+#endereco {
+    height: 575px;
+    width: 300px;
+    position: relative;
+    left: 720px;
+    bottom: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+#dadosPessoais {
+    height: 575px;
+    width: 300px;
+    position: relative;
+    left: 1025px;
+    bottom: 1056px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+#dadosPessoais button {
+    position: relative;
+    top: 90px;
+}
+
+#botaoFechar {
+    font-size: x-large;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    position: relative;
+    bottom: 1740px;
+    left: 1370px;
+}
+
+#botaoFechar:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#botaoAcharDados {
+    width: 178px;
+}
+
+.dadoInput {
+    width: 250px;
 }
