@@ -195,6 +195,7 @@ img{
     background-color: beige;
     flex-direction: column;
     overflow: hidden;
+    display: none;
 }
 
 #titulos {
@@ -209,6 +210,15 @@ img{
     border: solid;
     height: 550px;
     width: 700px;
+}
+
+#divProdutosCompra {
+    position: relative;
+    top: 10px;
+    left: 25px;
+    border: solid;
+    height: 150px;
+    width: 650px;
 }
 
 #endereco {
@@ -248,7 +258,7 @@ img{
     width: 50px;
     border-radius: 100%;
     position: relative;
-    bottom: 1740px;
+    bottom: 1700px;
     left: 1370px;
 }
 
@@ -263,4 +273,13 @@ img{
 
 .dadoInput {
     width: 250px;
+}
+
+#imagemProdutoCompra {
+    border: solid;
+    width: 90px;
+    height: 90px;
+    position: relative;
+    bottom: 120px;
+    left: 40px;
 }
