@@ -6,6 +6,8 @@ const botaoLimpar = document.querySelector("#botaoLimpar")
 const abrirModal = document.querySelector("#abrirModal")
 const pagina = document.querySelector("#pagina")
 
+let imagensProdutos = []
+
 window.addEventListener("load", function (event) {
 
     mostrarCategorias();
@@ -121,6 +123,7 @@ function mostrarProdutosCategorias(categoria2) {
 
         botaoAdicionar.addEventListener("click", (event) => {
 
+
             let divCarrinho = document.createElement("div")
             divCarrinho.id = "divCarrinho"
             let imagemCarrinho = document.createElement("img")
@@ -131,6 +134,8 @@ function mostrarProdutosCategorias(categoria2) {
             divCarrinho.appendChild(imagemCarrinho)
             divCarrinho.appendChild(nomeProduto)
             carrinho.appendChild(divCarrinho)
+            
+            imagensProdutos.push(imagemCarrinho)
 
 
         });
@@ -148,24 +153,27 @@ function mostrarProdutosCategorias(categoria2) {
 
         let modal2 = document.createElement("div");
         modal2.id = "modal2";
+
         let titulos = document.createElement("div")
         titulos.id = "titulos"
+
         let produtosInfo = document.createElement("div")
         produtosInfo.id = "produtosInfo"
+
         let endereco = document.createElement("div")
         endereco.id = "endereco"
+
         let dadosPessoais = document.createElement("div")
         dadosPessoais.id = "dadosPessoais"
-        let divProdutosCompra = document.createElement("div")
-        divProdutosCompra.id = "divProdutosCompra"
+
         let botaoFechar = document.createElement("button")
         botaoFechar.id = "botaoFechar"
+
         botaoFechar.textContent = "X"
 
-        let imagemProdutoCompra = document.createElement("img")
-        imagemProdutoCompra.id = "imagemProdutoCompra"
         let nomeProdutoCompra = document.createElement("h4")
         nomeProdutoCompra.id = "nomeProdutoCompra"
+
         let precoProdutoCompra = document.createElement("h4")
         precoProdutoCompra.id = "precoProdutoCompra"
 
@@ -199,6 +207,7 @@ function mostrarProdutosCategorias(categoria2) {
         let inputRua = document.createElement("input")
         inputRua.className = "dadoInput"
         inputRua.type = "text"
+
         let dadosTitulo = document.createElement("h2")
         dadosTitulo.textContent = "Dados Pessoais:"
         let dadosNome = document.createElement("label")
@@ -227,27 +236,19 @@ function mostrarProdutosCategorias(categoria2) {
         opt3.textContent = "Pix"
         let botaoFazerPedido = document.createElement("button")
         botaoFazerPedido.textContent = "fazer pedido"
+
         let produtoModal2 = document.createElement("h2");
         produtoModal2.id = "tituloModal2";
-        produtoModal2.textContent = "produto";
-        let nomeModal2 = document.createElement("h2");
-        nomeModal2.id = "nomeModal2";
-        nomeModal2.textContent = "nome";
-        let precoModal2 = document.createElement("h2");
-        precoModal2.id = "precoModal2";
-        precoModal2.textContent = "preco";
+        produtoModal2.textContent = "Produtos";
+        
         pagina.appendChild(modal2);
         modal2.appendChild(titulos)
         modal2.appendChild(produtosInfo)
-        produtosInfo.appendChild(divProdutosCompra)
         modal2.appendChild(endereco)
         modal2.appendChild(dadosPessoais)
         titulos.appendChild(produtoModal2);
-        produtosInfo.appendChild(imagemProdutoCompra)
         produtosInfo.appendChild(nomeProdutoCompra)
         produtosInfo.appendChild(precoProdutoCompra)
-        titulos.appendChild(nomeModal2);
-        titulos.appendChild(precoModal2);
         endereco.appendChild(enderecoTitulo)
         endereco.appendChild(tituloCep)
         endereco.appendChild(inputCep)
@@ -276,17 +277,52 @@ function mostrarProdutosCategorias(categoria2) {
         modal2.appendChild(botaoFechar)
 
         abrirModal.addEventListener("click", (event) =>{
+                
 
-            imagemProdutoCompra.src = imagem.src
-            nomeProdutoCompra.textContent = texto.textContent
-            precoProdutoCompra.textContent = preco.textContent
+                for (let index = 0; index < imagensProdutos.length; index++) {
+
+                    let imagemProdutoCompra = document.createElement("img")
+                    imagemProdutoCompra.id = "imagemProdutoCompra"
+                    imagemProdutoCompra.src = imagensProdutos[index].src;
+
+                    produtosInfo.appendChild(imagemProdutoCompra)
+    
+                    botaoFechar.addEventListener("click", (event) => {
+    
+                        produtosInfo.removeChild(imagemProdutoCompra)
+                        modal2.style.display = "none"
+            
+                    });
+
+                    botaoFazerPedido.addEventListener("click", (event) => {
+
+                        produtosInfo.removeChild(imagemProdutoCompra)
+                        modal2.style.display = "none"
+
+                    });
+               
+                } 
         
             modal2.style.display = "block"
 
         });
+
+        acharDados.addEventListener("click", (event) => {
+            
+                let url = "https://viacep.com.br/ws/" + inputCep.value + "/json";
         
-        botaoFechar.addEventListener("click", (event) => {
-
-            modal2.style.display = "none"
-
+                let request = new XMLHttpRequest();
+                request.open("GET", url, false);
+                request.send();
+                
+                let endereco = JSON.parse(request.response);
+                console.log(endereco)
+                inputEstado.value = endereco.uf;
+                inputCidade.value = endereco.localidade;
+                inputRua.value = endereco.logradouro;
+                inputBairro.value = endereco.bairro;
+        
+          
+             
         });
+    
