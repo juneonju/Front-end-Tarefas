@@ -1,24 +1,25 @@
-*{
+* {
     margin: 0;
 
 }
 
-body{
+body {
     background-color: lightblue;
-    overflow: hidden;
+    
 }
 
-img{
+img {
     width: 90px;
     height: 85px;
 }
 
 #pagina {
-    height: 1000px;
-    width: 1500px;
+    height: 910px;
+    width: 1380px;
     position: relative;
     top: 50px;
-    left: 100px;
+    left: 250px;
+    box-shadow: 10px 5px 5px grey;
 }
 
 #produtos-carrinho-botoes {
@@ -27,18 +28,22 @@ img{
     width: 1500px;
 }
 
-#campo-categoria{
+#campo-categoria {
     height: 30px;
     width: 1340px;
     display: flex;
     padding: 20px;
     text-align: center;
     align-items: center;
-    background-color: beige;
+    background-color: lavender;
     gap: 10px;
 }
 
-#campo-produto{
+#campo-categoria button {
+    box-shadow: 10px 5px 5px grey;
+}
+
+#campo-produto {
     height: 840px;
     width: 1040px;
     display: flex;
@@ -67,7 +72,10 @@ img{
     background-color: lightblue;
     overflow: auto;
     align-items: center;
+    box-shadow: 10px 5px 5px grey;
 }
+
+
 
 #imagensNoCarrinho {
     border: solid;
@@ -87,6 +95,7 @@ img{
 #botoes button {
     position: relative;
     top: 40px;
+    box-shadow: 10px 5px 5px grey;
 }
 
 .botao {
@@ -108,16 +117,17 @@ img{
 #modal{
     border: solid;
     height: 600px;
-    width: 500px;
+    width: 430px;
     position: absolute;
     top: 150px;
     left: 650px;
-    background-color: beige;
+    background-color: lightblue;
     display: none;
     flex-direction: column;
+    box-shadow: 10px 5px 5px grey;
 }
 
-#botaoSair{
+#botaoSair {
     position: relative;
     left: 350px;
     bottom: 350px;
@@ -125,31 +135,32 @@ img{
     height: 50px;
     width: 50px;
     border-radius: 100%;
+    box-shadow: 10px 5px 5px grey;
 }
 
-#botaoSair:hover{
+#botaoSair:hover {
     cursor: pointer;
 }
 
-#botaoAdicionar{
+#botaoAdicionar {
     position: relative;
     top: 80px;
     left: 50px;
     height: 50px;
     width: 250px;
-    border: solid;
+    box-shadow: 10px 5px 5px grey;
 }
 
-#botaoAdicionar:hover{
+#botaoAdicionar:hover {
     cursor: pointer;
 }
 
-#produtosImg:hover{
+#produtosImg:hover {
     cursor: pointer;
     opacity: 0.8;
 }
 
-#produtosModal{
+#produtosModal {
     height: 200px;
     width: 250px;
     position: relative;
@@ -167,9 +178,10 @@ img{
     left: 55px;
     font-size: large;
     overflow: auto;
+    background-color: white;
 }
 
-#produtostPModal{
+#produtostPModal {
     position: relative;
     width: 200px;
     top: 250px;
@@ -183,20 +195,21 @@ img{
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: beige;
+    background-color: lavender;
     overflow: auto;
 }
 
 #modal2 {
     border: solid;
     height: 600px;
-    width: 1250px;
+    width: 1140px;
     position: absolute;
     top: 80px;
-    background-color: beige;
+    background-color: lightblue;
     flex-direction: column;
     overflow: hidden;
     display: none;
+    box-shadow: 10px 5px 5px grey;
 }
 
 #titulos {
@@ -220,6 +233,7 @@ img{
     top: 30px;
     left: 100px;
     background-color: white;
+    box-shadow: 10px 5px 5px grey;
 }
 
 #divProdutosCompra {
@@ -269,6 +283,7 @@ img{
     position: relative;
     bottom: 1650px;
     left: 1050px;
+    box-shadow: 10px 5px 5px grey;
 }
 
 #botaoFechar:hover {
@@ -282,6 +297,11 @@ img{
 
 .dadoInput {
     width: 250px;
+    box-shadow: 10px 5px 5px grey;
+}
+
+#selecaoPagamento {
+    box-shadow: 10px 5px 5px grey;
 }
 
 #imagemProdutoCompra {
@@ -291,6 +311,18 @@ img{
     left: 70px;
 }
 
+#botaoFazerPedido {
+    background-color: white;
+    border-radius: 20px;
+    height: 30px;
+    width: 130px;
+    box-shadow: 10px 5px 5px grey;
+}
 
-
-
+#botaoAcharDados {
+    background-color: white;
+    border-radius: 20px;
+    height: 30px;
+    width: 130px;
+    box-shadow: 10px 5px 5px grey;
+}
