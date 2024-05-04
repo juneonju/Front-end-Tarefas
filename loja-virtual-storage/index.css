@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+
+}
+
+body {
+    background-color: lightblue;
+    
+}
+
+img {
+    width: 90px;
+    height: 85px;
+}
+
+#pagina {
+    height: 910px;
+    width: 1380px;
+    position: relative;
+    top: 50px;
+    left: 250px;
+    box-shadow: 10px 5px 5px grey;
+}
+
+#produtos-carrinho-botoes {
+    display: flex;
+    height: 900px;
+    width: 1500px;
+}
+
+#campo-categoria {
+    height: 30px;
+    width: 1340px;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    background-color: lavender;
+    gap: 10px;
+}
+
+#campo-categoria button {
+    box-shadow: 10px 5px 5px grey;
+}
+
+#campo-produto {
+    height: 840px;
+    width: 1040px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    gap: 2px;
+}
+
+#campo-produto img, h3, h4 {
+    position: relative;
+    top: 15px;
+}
+
+#campo-produto img {
+    border: solid;
+}
+
+#campo-carrinho {
+    height: 700px;
+    width: 294px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    background-color: lightblue;
+    overflow: auto;
+    align-items: center;
+    box-shadow: 10px 5px 5px grey;
+}
+
+
+
+#imagensNoCarrinho {
+    border: solid;
+    height: 70px;
+    width: 90px;
+}
+
+#botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100px;
+    width: 294px;
+    align-items: center;
+}
+
+#botoes button {
+    position: relative;
+    top: 40px;
+    box-shadow: 10px 5px 5px grey;
+}
+
+.botao {
+    background-color: white;
+    border-radius: 20px;
+    height: 30px;
+    width: 200px;
+}
+
+.botao:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#botaoLimpar {
+    width: 60px;
+}
+
+#modal{
+    border: solid;
+    height: 600px;
+    width: 430px;
+    position: absolute;
+    top: 150px;
+    left: 650px;
+    background-color: lightblue;
+    display: none;
+    flex-direction: column;
+    box-shadow: 10px 5px 5px grey;
+}
+
+#botaoSair {
+    position: relative;
+    left: 350px;
+    bottom: 350px;
+    font-size: x-large;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    box-shadow: 10px 5px 5px grey;
+}
+
+#botaoSair:hover {
+    cursor: pointer;
+}
+
+#botaoAdicionar {
+    position: relative;
+    top: 80px;
+    left: 50px;
+    height: 50px;
+    width: 250px;
+    box-shadow: 10px 5px 5px grey;
+}
+
+#botaoAdicionar:hover {
+    cursor: pointer;
+}
+
+#produtosImg:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#produtosModal {
+    height: 200px;
+    width: 250px;
+    position: relative;
+    top: 50px;
+    left: 55px;
+    border: solid;
+}
+
+#descricaoDiv {
+    border: solid;
+    position: relative;
+    height: 150px;
+    width: 250px;
+    top: 20px;
+    left: 55px;
+    font-size: large;
+    overflow: auto;
+    background-color: white;
+}
+
+#produtostPModal {
+    position: relative;
+    width: 200px;
+    top: 250px;
+    left: 55px;
+    font-size: xx-large;
+}
+
+#carrinho-botoes {
+    height: 840px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: lavender;
+    overflow: auto;
+}
+
+#modal2 {
+    border: solid;
+    height: 600px;
+    width: 1140px;
+    position: absolute;
+    top: 80px;
+    background-color: lightblue;
+    flex-direction: column;
+    overflow: hidden;
+    display: none;
+    box-shadow: 10px 5px 5px grey;
+}
+
+#titulos {
+    display: flex;
+    gap: 150px;
+    width: 600px;
+    position: relative;
+    top: 20px;
+    left: 200px;
+}
+
+#produtosInfo {
+    border: solid;
+    height: 500px;
+    width: 300px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    position: relative;
+    top: 30px;
+    left: 100px;
+    background-color: white;
+    box-shadow: 10px 5px 5px grey;
+}
+
+#divProdutosCompra {
+    border: solid;
+    height:150px;
+    width: 694px;
+    display: flex;
+    flex-direction: column;
+}
+
+#endereco {
+    height: 575px;
+    width: 300px;
+    position: relative;
+    left: 420px;
+    bottom: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+#dadosPessoais {
+    height: 575px;
+    width: 300px;
+    position: relative;
+    left: 725px;
+    bottom: 1056px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+#dadosPessoais button {
+    position: relative;
+    top: 90px;
+}
+
+#botaoFechar {
+    font-size: x-large;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    position: relative;
+    bottom: 1650px;
+    left: 1050px;
+    box-shadow: 10px 5px 5px grey;
+}
+
+#botaoFechar:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#botaoAcharDados {
+    width: 178px;
+}
+
+.dadoInput {
+    width: 250px;
+    box-shadow: 10px 5px 5px grey;
+}
+
+#selecaoPagamento {
+    box-shadow: 10px 5px 5px grey;
+}
+
+#imagemProdutoCompra {
+    width: 130px;
+    height: 130px;
+    position: relative;
+    left: 70px;
+}
+
+#botaoFazerPedido {
+    background-color: white;
+    border-radius: 20px;
+    height: 30px;
+    width: 130px;
+    box-shadow: 10px 5px 5px grey;
+}
+
+#botaoAcharDados {
+    background-color: white;
+    border-radius: 20px;
+    height: 30px;
+    width: 130px;
+    box-shadow: 10px 5px 5px grey;
+}
+
+#link {
+    text-decoration: none;
+    color: black;
+    width: 300px;
+    border: solid;
+}
