@@ -138,6 +138,8 @@ function mostrarProdutosCategorias(categoria2) {
         //evento de click do botão pra adicionar dados no carrinho, como imagens e nomes dos produtos
         botaoAdicionar.addEventListener("click", (event) => {
 
+            //Aqui eu excluo as imagens pre-existentes na lista
+            imagensProdutos.pop()
             let divCarrinho = document.createElement("div")
             divCarrinho.id = "divCarrinho"
             let imagemCarrinho = document.createElement("img")
