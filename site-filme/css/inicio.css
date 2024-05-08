@@ -17,28 +17,8 @@ header {
     align-items: center;
 }
 
-#nav-menu {
-    width: 100%;
-}
-
-#menu-items {
+main {
     display: flex;
-    align-items: center;
-    border: solid;
-    gap: 20px;
-}
-
-#nav-logo {
-    height: 40px;
-    width: 70px;
-}
-
-#nav-mini-menu {
-    color: white;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    width: 70px;
 }
 
 #area-img {

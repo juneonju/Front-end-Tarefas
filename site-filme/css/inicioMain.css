@@ -1,0 +1,46 @@
+#secao-filmes-populares {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    text-align: center;
+    border: solid;
+    color: white;
+    height: 500px;
+    width: 300px;
+}
+
+#titulo-filmes-populares {
+    color: white;
+}
+#div-poster-titulo {
+    color: white;
+    border: solid;
+    height: 390px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+}
+
+#imgPadrao {
+    height: 300px;
+    width: 200px;
+}
+
+#titulo-filme {
+    color: white;
+    width: 200px;
+    text-align: center;
+}
+
+#secao-melhores-filmes-avaliados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: solid;
+    color: white;
+    width: 300px;
+}
