@@ -21,16 +21,3 @@ main {
     display: flex;
 }
 
-#area-img {
-    color: white;
-    border: solid;
-    height: 400px;
-    width: 300px;
-    display: flex;
-    overflow: hidden;
-}
-
-.imgPadrao {
-    height: 300px;
-    width: 200px;
-}

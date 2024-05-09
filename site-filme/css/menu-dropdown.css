@@ -1,0 +1,38 @@
+.menu {
+    background-color: #333;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu ul li {
+    display: inline-block;
+  }
+  
+  .menu ul li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .menu ul li:hover {
+    background-color: #555;
+  }
+  
+  .menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+  }
+  
+  .menu .dropdown-content li {
+    display: block;
+  }
+  
+  .menu .dropdown:hover .dropdown-content {
+    display: block;
+  }

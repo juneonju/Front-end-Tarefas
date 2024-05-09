@@ -1,0 +1,26 @@
+#melhores-filmes-avaliados {
+    height: 520px;
+    width: 350px;
+    align-items: center;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+#filmes-avaliados {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#posterImage {
+    border: solid;
+}
+
+#titulo-filme {
+    color: black;
+    width: 200px;
+    text-align: center;
+}

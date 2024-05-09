@@ -1,0 +1,18 @@
+main {
+    display: flex;
+    height: 100%;
+}
+
+#pagina-background {
+    background-color: white;
+    position: relative;
+    left: 450px;
+    height: 100%;
+    width: 1000px;
+}
+
+#secao-um {
+    display: flex;
+}
+
+
