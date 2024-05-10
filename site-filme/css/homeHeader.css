@@ -12,22 +12,57 @@ header {
 
 #menu-items {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    border: solid;
     position: relative;
     left: 450px;
+    height: 56px;
     width: 1000px;
 }
 
-#nav-logo {
+#nav-site-logo {
     height: 40px;
     width: 70px;
 }
 
 #nav-mini-menu {
+    display: inline;
+    height: 56px;
+    width: 1000px;
+}
+
+#items-menu {
+    display: flex;
+    gap: 30px;
+}
+
+#items-menu li a {
     color: white;
     display: flex;
-    align-items: center;
-    gap: 5px;
-    width: 70px;
+    text-decoration: none;
+    font-size: x-large;
+    position: relative;
+    top: 15px;
+    left: 50px;
 }
+
+#items-menu li a:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+#item-follow {
+    color: white;
+    position: relative;
+    top: 15px;
+    left: 50px;
+}
+
+.link {
+    color: white;
+    font-size: x-large;
+    position: relative;
+    top: 15px;
+    left: 50px;
+}
+
