@@ -1,0 +1,28 @@
+#titulo-filmes-lancamento {
+    position: relative;
+    height: 80px;
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+
+#titulo-filmes-lancamento h1 {
+    position: relative;
+    left: 0px;
+    top: 20px;
+}
+
+#filmes-lancamentos-div {
+    height: 320px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    background-color: black;
+}
+
+#posters-novos-filmes {
+    display: flex;
+    gap: 20px;
+    background-color: black;
+}

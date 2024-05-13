@@ -1,0 +1,28 @@
+#titulo-series-populares {
+    position: relative;
+    height: 80px;
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+
+#titulo-series-populares h1 {
+    position: relative;
+    left: 0px;
+    top: 20px;
+}
+
+#series-populares-div {
+    height: 320px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    background-color: black;
+}
+
+#posters-series-populares {
+    display: flex;
+    gap: 20px;
+    background-color: black;
+}

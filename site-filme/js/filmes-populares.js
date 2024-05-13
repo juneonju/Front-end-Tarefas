@@ -61,10 +61,3 @@ function buscar(){
 
     }
 }
-
-setInterval(() => {
-    if (pass) {
-        ;
-    }
-    
-}, 3000);

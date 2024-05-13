@@ -3,18 +3,17 @@
     width: 600px;
     display: flex;
     flex-direction: column;
-    
     gap: 20px;
     align-items: center;
 }
 
 #titulo-filmes-populares {
-    color: black;
+    color: white;
 }
+
 .slider {
     margin: 0 auto;
     color: black;
-    border: solid;
     height: 300px;
     width: 200px;
     overflow: hidden;
@@ -49,7 +48,7 @@
 }
 
 .manual-btn {
-    border: 2px solid black;
+    border: 2px solid white;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -61,7 +60,7 @@
 }
 
 .manual-btn:hover {
-    background-color: black;
+    background-color: white;
 }
 
 #radio1:checked ~ .first {
@@ -165,81 +164,81 @@
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1 {
-    background-color: black;
+    background-color: white;
 }
 
 #radio2:checked ~ .navigation-auto .auto-btn2 {
-    background-color: black;
+    background-color: white;
 }
 
 #radio3:checked ~ .navigation-auto .auto-btn3 {
-    background-color: black;
+    background-color: white;
 }
 
 #radio4:checked ~ .navigation-auto .auto-btn4 {
-    background-color: black;
+    background-color: white;
 }
 
 #radio5:checked ~ .navigation-auto .auto-btn5 {
-    background-color: black;
+    background-color: white;
 }
 
 #radio6:checked ~ .navigation-auto .auto-btn6 {
-    background-color: black;
+    background-color: white;
 }
 
 #radio7:checked ~ .navigation-auto .auto-btn7 {
-    background-color: black;
+    background-color: white;
 }
 
 #radio8:checked ~ .navigation-auto .auto-btn8 {
-    background-color: black;
+    background-color: white;
 }
 
 #radio9:checked ~ .navigation-auto .auto-btn9 {
-    background-color: black;
+    background-color: white;
 }
 
 #radio10:checked ~ .navigation-auto .auto-btn10 {
-    background-color: black;
+    background-color: white;
 }
 
 #radio11:checked ~ .navigation-auto .auto-btn11 {
-    background-color: black;
+    background-color: white;
 }
 
 #radio12:checked ~ .navigation-auto .auto-btn12 {
-    background-color: black;
+    background-color: white;
 }
 
 #radio13:checked ~ .navigation-auto .auto-btn13 {
-    background-color: black;
+    background-color: white;
 }
 
 #radio14:checked ~ .navigation-auto .auto-btn14 {
-    background-color: black;
+    background-color: white;
 }
 
 #radio15:checked ~ .navigation-auto .auto-btn15 {
-    background-color: black;
+    background-color: white;
 }
 
 #radio16:checked ~ .navigation-auto .auto-btn16 {
-    background-color: black;
+    background-color: white;
 }
 
 #radio17:checked ~ .navigation-auto .auto-btn17 {
-    background-color: black;
+    background-color: white;
 }
 
 #radio18:checked ~ .navigation-auto .auto-btn18 {
-    background-color: black;
+    background-color: white;
 }
 
 #radio19:checked ~ .navigation-auto .auto-btn19 {
-    background-color: black;
+    background-color: white;
 }
 
 #radio20:checked ~ .navigation-auto .auto-btn20 {
-    background-color: black;
+    background-color: white;
 }

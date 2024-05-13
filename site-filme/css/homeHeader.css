@@ -33,7 +33,7 @@ header {
 
 #items-menu {
     display: flex;
-    gap: 30px;
+    gap: 350px;
 }
 
 #items-menu li a {
@@ -41,9 +41,6 @@ header {
     display: flex;
     text-decoration: none;
     font-size: x-large;
-    position: relative;
-    top: 15px;
-    left: 50px;
 }
 
 #items-menu li a:hover {
@@ -53,16 +50,25 @@ header {
 
 #item-follow {
     color: white;
-    position: relative;
-    top: 15px;
-    left: 50px;
 }
 
 .link {
     color: white;
     font-size: x-large;
-    position: relative;
-    top: 15px;
-    left: 50px;
 }
 
+#links-para-paginas {
+    display: flex;
+    position: relative;
+    top: 10px;
+    left: 50px;
+    gap: 20px;
+}
+
+#links-para-follow {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    top: 10px;
+    left: 50px;
+}

@@ -5,22 +5,18 @@
     gap: 20px;
     display: flex;
     flex-direction: column;
-    color: black;
+    color: white;
 }
 
 #filmes-avaliados {
     height: 500px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-}
-
-#posterImage {
-    border: solid;
+    gap: 40px;
 }
 
 #titulo-filme {
-    color: black;
+    color: white;
     width: 200px;
     text-align: center;
 }
