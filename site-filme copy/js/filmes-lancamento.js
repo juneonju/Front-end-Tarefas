@@ -7,13 +7,13 @@ function buscar(){
 
     let caminhoIMG2 = "https://media.themoviedb.org/t/p/w200";
 
-    let url2 = 'https://api.themoviedb.org/3/movie/upcoming?language=en-US&page=1';
+    let url = 'https://api.themoviedb.org/3/movie/upcoming?language=en-US&page=1';
 
     let request = new XMLHttpRequest();
-    request.open("GET", url2, false);
+    request.open("GET", url, false);
     request.setRequestHeader('Authorization', 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5ZmMwY2VhZDUzN2RjYTVlZGQ0ZWZmMzUyNjJiOTBmZSIsInN1YiI6IjY2Mzk1ZTAxYzYxNmFjMDEyYTFiZDQ3ZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.vdUNpwn5h4ADOUT-5kYClJb2fc0GckzXoSWzcZkc5Q0');
     request.send();
-    console.log(url2);
+    console.log(url);
 
     let lista1 = JSON.parse(request.response);
     console.log(lista1);
@@ -31,6 +31,8 @@ function buscar(){
         
         divLancamentos.appendChild(poster2)
 
+        let imgModal = document.createElement("img")
+        imgModal.src = caminhoIMG2 + lista1.results[index].poster_path;
         let iframe = document.createElement("iframe")
         iframe.id = "iframe"
         let modal = document.createElement("div")
@@ -53,10 +55,10 @@ function buscar(){
 
             function buscarTrailer(idFilme){
 
-                let url3 = 'https://api.themoviedb.org/3/movie/' + idFilme + '/videos?language=en-US'
+                let url = 'https://api.themoviedb.org/3/movie/' + idFilme + '/videos?language=en-US'
             
                 let request = new XMLHttpRequest();
-                request.open("GET", url3, false);
+                request.open("GET", url, false);
                 request.setRequestHeader('Authorization', 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5ZmMwY2VhZDUzN2RjYTVlZGQ0ZWZmMzUyNjJiOTBmZSIsInN1YiI6IjY2Mzk1ZTAxYzYxNmFjMDEyYTFiZDQ3ZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.vdUNpwn5h4ADOUT-5kYClJb2fc0GckzXoSWzcZkc5Q0');
                 request.send();
                 let listavideos = JSON.parse(request.response);
@@ -76,7 +78,7 @@ function buscar(){
             modal.appendChild(trailer)
             modal.appendChild(texto)
             modal.appendChild(botaoFecharDiv)
-            poster.appendChild(poster2)
+            poster.appendChild(imgModal)
             tituloFilme.appendChild(titulos)
             trailer.appendChild(iframe)
             texto.appendChild(textos)
@@ -86,7 +88,6 @@ function buscar(){
 
         botaoFechar.addEventListener("click", (event) => {
             modal.style.display = "none"
-            modal.innerHTML = ""
         });
     }
 }
