@@ -1,12 +1,8 @@
 #carrossel-filmes-populares {
-    color: white;
     height: 520px;
     width: 600px;
     display: flex;
     flex-direction: column;
-    position: relative;
-    top: 50px;
-    left: 450px;
     gap: 20px;
     align-items: center;
 }
@@ -14,10 +10,10 @@
 #titulo-filmes-populares {
     color: white;
 }
+
 .slider {
     margin: 0 auto;
-    color: white;
-    border: solid;
+    color: black;
     height: 300px;
     width: 200px;
     overflow: hidden;

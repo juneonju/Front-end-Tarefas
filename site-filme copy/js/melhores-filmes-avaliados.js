@@ -1,5 +1,5 @@
 const areaImg = document.querySelector('#div-poster-titulo');
-const img = document.querySelector('#imgPadrao');
+const img = document.querySelector('#posterImage');
 const titulo = document.querySelector('#titulo-filme')
 
 let listaPoster = [];
@@ -13,7 +13,7 @@ function buscar(){
 
     let caminhoIMG = "https://media.themoviedb.org/t/p/w200";
 
-    let url = "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1";
+    let url = "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=vote_average.desc&without_genres=99,10755&vote_count.gte=200";
 
     let request = new XMLHttpRequest();
     request.open("GET", url, false);
@@ -27,8 +27,12 @@ function buscar(){
     for (let index = 0; index < lista.results.length; index++) {
         let poster = document.createElement("img");
         poster.src = caminhoIMG + lista.results[index].poster_path;
+        let titulos = document.createElement("h3");
+        titulos.className = "titulos";
+        titulos.textContent = lista.results[index].title;
         
         listaPoster.push(poster);
+        listaTitulos.push(titulos);
 
     }
 
@@ -41,16 +45,6 @@ function buscar(){
         contador++;
     }, 3000);
 
-
-    for (let index = 0; index < lista.results.length; index++) {
-        let titulos = document.createElement("h3");
-        titulos.className = "titulos";
-        titulos.textContent = lista.results[index].title;
-
-        listaTitulos.push(titulos);
-        
-    }
-
     titulo.textContent = listaTitulos[0].textContent
         setInterval(() => {
             if (contador2 >= listaTitulos.length) {
@@ -61,4 +55,3 @@ function buscar(){
         }, 3000);
 
 }
-  

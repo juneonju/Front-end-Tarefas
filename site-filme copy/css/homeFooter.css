@@ -1,0 +1,31 @@
+#container {
+    height: 56px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#creditos {
+    color: white;
+    width: 240px;
+    height: 40px;
+    position: relative;
+    top: 8px;
+    left: 860px;
+}
+
+#links {
+    display: flex;
+    gap: 20px;
+    height: 48px;
+    width: 150px;
+    position: relative;
+    top: 8px;
+    left: 1400px;
+}
+
+#links a {
+    color: white;
+}

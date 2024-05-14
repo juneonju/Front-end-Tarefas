@@ -1,0 +1,22 @@
+#melhores-filmes-avaliados {
+    height: 520px;
+    width: 350px;
+    align-items: center;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+#filmes-avaliados {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#titulo-filme {
+    color: white;
+    width: 200px;
+    text-align: center;
+}
