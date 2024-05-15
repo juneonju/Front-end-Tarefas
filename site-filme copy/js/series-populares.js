@@ -54,7 +54,7 @@ function buscar(){
 
             function buscarTrailer(idFilme){
 
-                let url = 'https://api.themoviedb.org/3/movie/' + idFilme + '/videos?language=en-US'
+                let url = 'https://api.themoviedb.org/3/tv/' + idFilme + '/videos?language=en-US'
                 
                 let request = new XMLHttpRequest();
                 request.open("GET", url, false);
