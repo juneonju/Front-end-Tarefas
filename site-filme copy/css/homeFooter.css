@@ -1,8 +1,6 @@
 #container {
-    height: 56px;
+    height: 100%;
     width: 100%;
-    position: absolute;
-    bottom: 0;
     display: flex;
     flex-direction: row;
 }
@@ -12,8 +10,9 @@
     width: 240px;
     height: 40px;
     position: relative;
-    top: 8px;
     left: 860px;
+    display: flex;
+    text-align: center;
 }
 
 #links {
@@ -22,7 +21,6 @@
     height: 48px;
     width: 150px;
     position: relative;
-    top: 8px;
     left: 1400px;
 }
 
