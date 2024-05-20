@@ -1,13 +1,13 @@
-const divSeriesAvaliadas = document.querySelector("#posters-series-melhores-avaliadas");
-const main3 = document.querySelector("main")
+const pageBackground = document.querySelector("#pagina-background2")
+const main = document.querySelector("main")
 
-window.onload =  buscar();
+function filtroFilmes(classificar){
 
-function buscar(){
+    pageBackground.innerHTML = ""
 
-    let caminhoIMG = 'https://media.themoviedb.org/t/p/w200';
+    let caminhoIMG2 = "https://media.themoviedb.org/t/p/w200";
 
-    let url = 'https://api.themoviedb.org/3/tv/top_rated?language=en-US&page=1';
+    let url = 'https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=' + classificar.value;
 
     let request = new XMLHttpRequest();
     request.open("GET", url, false);
@@ -15,23 +15,25 @@ function buscar(){
     request.send();
     console.log(url);
 
-    let lista = JSON.parse(request.response);
-    console.log(lista);
+    let lista1 = JSON.parse(request.response);
+    console.log(lista1);
 
-    for (let index = 0; index < lista.results.length; index++) {
-        let imgModal = document.createElement("img")
-        imgModal.src = caminhoIMG + lista.results[index].poster_path;
-        let titulos = document.createElement("h1");
-        titulos.textContent = lista.results[index].title;
-        let textos = document.createElement("h3");
-        textos.textContent = lista.results[index].overview;
-        let id = document.createElement("h1");
-        id.textContent = lista.results[index].id;
-
+    for (let index = 0; index < lista1.results.length; index++) {
         let poster2 = document.createElement("img");
-        poster2.src = caminhoIMG + lista.results[index].poster_path;
-        divSeriesAvaliadas.appendChild(poster2)
+        poster2.src = caminhoIMG2 + lista1.results[index].poster_path;
+        poster2.className = "pointer"
+        let titulos = document.createElement("h1");
+        titulos.textContent = lista1.results[index].title;
+        let textos = document.createElement("h3");
+        textos.textContent = lista1.results[index].overview;
+        let id = document.createElement("h1");
+        id.textContent = lista1.results[index].id;
+       
+        
+        pageBackground.appendChild(poster2)
 
+        let imgModal = document.createElement("img")
+        imgModal.src = caminhoIMG2 + lista1.results[index].poster_path;
         let iframe = document.createElement("iframe")
         iframe.id = "iframe"
         let modal = document.createElement("div")
@@ -49,27 +51,27 @@ function buscar(){
         let botaoFechar = document.createElement("button")
         botaoFechar.id = "botaoFechar"
         botaoFechar.textContent = "X"
+        botaoFechar.className = "pointer"
 
         poster2.addEventListener("click", (event) => {
 
             function buscarTrailer(idFilme){
 
-                let url = 'https://api.themoviedb.org/3/tv/' + idFilme + '/videos?language=en-US'
-                
+                let url = 'https://api.themoviedb.org/3/movie/' + idFilme + '/videos?language=en-US'
+            
                 let request = new XMLHttpRequest();
                 request.open("GET", url, false);
                 request.setRequestHeader('Authorization', 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5ZmMwY2VhZDUzN2RjYTVlZGQ0ZWZmMzUyNjJiOTBmZSIsInN1YiI6IjY2Mzk1ZTAxYzYxNmFjMDEyYTFiZDQ3ZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.vdUNpwn5h4ADOUT-5kYClJb2fc0GckzXoSWzcZkc5Q0');
                 request.send();
-                let listavideos2 = JSON.parse(request.response);
-                console.log(listavideos2);
-                
-                for (let index = 0; index < listavideos2.results.length; index++) {
-                        
-                    iframe.src = "http://www.youtube.com/embed/" + listavideos2.results[index].key 
-                        
+                let listavideos = JSON.parse(request.response);
+                console.log(listavideos);
+            
+                for (let index = 0; index < listavideos.results.length; index++) {
+                    
+                    iframe.src = "http://www.youtube.com/embed/" + listavideos.results[index].key 
+                    
                 }
             }
-
             buscarTrailer(id.textContent)
             modal.style.display = "block"
             main.appendChild(modal)
@@ -87,9 +89,7 @@ function buscar(){
         });
 
         botaoFechar.addEventListener("click", (event) => {
-
             modal.style.display = "none"
-
         });
     }
 }

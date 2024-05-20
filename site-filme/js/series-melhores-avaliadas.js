@@ -1,19 +1,19 @@
-const divSeriesPopulares = document.querySelector("#posters-series-populares")
-const main2 = document.querySelector("main")
+const divSeriesAvaliadas = document.querySelector("#posters-series-melhores-avaliadas");
+const main3 = document.querySelector("main")
 
 window.onload =  buscar();
 
 function buscar(){
 
-    let caminhoIMG = "https://media.themoviedb.org/t/p/w200";
+    let caminhoIMG = 'https://media.themoviedb.org/t/p/w200';
 
-    let url2 = 'https://api.themoviedb.org/3/tv/popular?language=en-US&page=1';
+    let url = 'https://api.themoviedb.org/3/tv/top_rated?language=en-US&page=1';
 
     let request = new XMLHttpRequest();
-    request.open("GET", url2, false);
+    request.open("GET", url, false);
     request.setRequestHeader('Authorization', 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5ZmMwY2VhZDUzN2RjYTVlZGQ0ZWZmMzUyNjJiOTBmZSIsInN1YiI6IjY2Mzk1ZTAxYzYxNmFjMDEyYTFiZDQ3ZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.vdUNpwn5h4ADOUT-5kYClJb2fc0GckzXoSWzcZkc5Q0');
     request.send();
-    console.log(url2);
+    console.log(url);
 
     let lista = JSON.parse(request.response);
     console.log(lista);
@@ -22,7 +22,7 @@ function buscar(){
         let imgModal = document.createElement("img")
         imgModal.src = caminhoIMG + lista.results[index].poster_path;
         let titulos = document.createElement("h1");
-        titulos.textContent = lista.results[index].title;
+        titulos.textContent = lista.results[index].name;
         let textos = document.createElement("h3");
         textos.textContent = lista.results[index].overview;
         let id = document.createElement("h1");
@@ -30,7 +30,8 @@ function buscar(){
 
         let poster2 = document.createElement("img");
         poster2.src = caminhoIMG + lista.results[index].poster_path;
-        divSeriesPopulares.appendChild(poster2)
+        poster2.className = "pointer"
+        divSeriesAvaliadas.appendChild(poster2)
 
         let iframe = document.createElement("iframe")
         iframe.id = "iframe"
@@ -49,6 +50,7 @@ function buscar(){
         let botaoFechar = document.createElement("button")
         botaoFechar.id = "botaoFechar"
         botaoFechar.textContent = "X"
+        botaoFechar.className = "pointer"
 
         poster2.addEventListener("click", (event) => {
 
@@ -72,7 +74,7 @@ function buscar(){
 
             buscarTrailer(id.textContent)
             modal.style.display = "block"
-            main.appendChild(modal)
+            main3.appendChild(modal)
             modal.appendChild(poster)
             modal.appendChild(tituloFilme)
             modal.appendChild(trailer)

@@ -56,8 +56,7 @@ function buscar(){
         img17.src = caminhoIMG + lista.results[16].poster_path;
         img18.src = caminhoIMG + lista.results[17].poster_path;
         img19.src = caminhoIMG + lista.results[18].poster_path;
-        img20.src = caminhoIMG + lista.results[19].poster_path;
-        
+        img20.src = caminhoIMG + lista.results[19].poster_path;     
 
     }
 }

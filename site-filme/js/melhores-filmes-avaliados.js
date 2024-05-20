@@ -1,6 +1,7 @@
 const areaImg = document.querySelector('#div-poster-titulo');
 const img = document.querySelector('#posterImage');
 const titulo = document.querySelector('#titulo-filme')
+const main5 = document.querySelector("main")
 
 let listaPoster = [];
 let listaTitulos = [];
@@ -25,10 +26,14 @@ function buscar(){
     console.log(lista);
 
     for (let index = 0; index < lista.results.length; index++) {
-        let poster = document.createElement("img");
-        poster.src = caminhoIMG + lista.results[index].poster_path;
+        let poster2 = document.createElement("img");
+        poster2.src = caminhoIMG + lista.results[index].poster_path;
+        let titulos2 = document.createElement("h3");
+        titulos2.className = "titulos";
+        titulos2.textContent = lista.results[index].title;
         
-        listaPoster.push(poster);
+        listaPoster.push(poster2);
+        listaTitulos.push(titulos2);
 
     }
 
@@ -41,16 +46,6 @@ function buscar(){
         contador++;
     }, 3000);
 
-
-    for (let index = 0; index < lista.results.length; index++) {
-        let titulos = document.createElement("h3");
-        titulos.className = "titulos";
-        titulos.textContent = lista.results[index].title;
-
-        listaTitulos.push(titulos);
-        
-    }
-
     titulo.textContent = listaTitulos[0].textContent
         setInterval(() => {
             if (contador2 >= listaTitulos.length) {
@@ -61,4 +56,3 @@ function buscar(){
         }, 3000);
 
 }
-  

@@ -7,7 +7,7 @@ function filtroFilmes(classificar){
 
     let caminhoIMG2 = "https://media.themoviedb.org/t/p/w200";
 
-    let url = 'https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=' + classificar.value;
+    let url = 'https://api.themoviedb.org/3/discover/tv?include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=' + classificar.value;
 
     let request = new XMLHttpRequest();
     request.open("GET", url, false);
@@ -21,8 +21,9 @@ function filtroFilmes(classificar){
     for (let index = 0; index < lista1.results.length; index++) {
         let poster2 = document.createElement("img");
         poster2.src = caminhoIMG2 + lista1.results[index].poster_path;
+        poster2.className = "pointer"
         let titulos = document.createElement("h1");
-        titulos.textContent = lista1.results[index].title;
+        titulos.textContent = lista1.results[index].name;
         let textos = document.createElement("h3");
         textos.textContent = lista1.results[index].overview;
         let id = document.createElement("h1");
@@ -50,12 +51,13 @@ function filtroFilmes(classificar){
         let botaoFechar = document.createElement("button")
         botaoFechar.id = "botaoFechar"
         botaoFechar.textContent = "X"
+        botaoFechar.className = "pointer"
 
         poster2.addEventListener("click", (event) => {
 
             function buscarTrailer(idFilme){
 
-                let url = 'https://api.themoviedb.org/3/movie/' + idFilme + '/videos?language=en-US'
+                let url = 'https://api.themoviedb.org/3/tv/' + idFilme + '/videos?language=en-US'
             
                 let request = new XMLHttpRequest();
                 request.open("GET", url, false);
